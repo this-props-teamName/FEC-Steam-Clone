@@ -19,6 +19,16 @@ const pool = new pg.Pool({
     : {}),
 });
 
+//middleware for json data, cors, and static file
+app.use(express.static("static")); // No static file - this might cause issues
+app.use(express.json());
+app.use(cors());
+
+//middleware for code 404 errors
+const unknownHTTP = (req, res, next) => {
+    res.sendStatus(404);
+    next();
+};
 
 //////////////////////////////////////////////////////////////////////////////////
 //Get requests for all 7 of our tables
@@ -73,16 +83,6 @@ app.get('/api/logIn', (req, res, next) =>{
 })
 
 
-//middleware for json data, cors, and static file
-app.use(express.static("static")); // No static file - this might cause issues
-app.use(express.json());
-app.use(cors());
-
-//middleware for code 404 errors
-const unknownHTTP = (req, res, next) => {
-    res.sendStatus(404);
-    next();
-};
 
 
 
