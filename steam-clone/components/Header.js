@@ -1,15 +1,13 @@
 import Link from 'next/link'
 
-
-
 const Header = () => {
   return (
-      <div>
-        <Link href='/'>Store</Link>
-        <Link href='/'> Community</Link>
-        <Link href='/'>Chat</Link>
-        <Link href='/'>Suport</Link>
-      </div>
+    <header className='bg-black text-white h-20'>
+      <Link href='/'>Store</Link>
+      <Link href='/'> Community</Link>
+      <Link href='/'>Chat</Link>
+      <Link href='/'>Support</Link>
+    </header>
   )
 }
 
