@@ -9,7 +9,7 @@ DROP TABLE IF EXISTS logIn;
 
 
 CREATE TABLE game (
-    id SERIAL,
+    id SERIAL PRIMARY KEY,
     game_id INTEGER UNIQUE
 );
 
