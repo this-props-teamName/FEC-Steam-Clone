@@ -17,20 +17,20 @@ CREATE TABLE gameInfo (
     id SERIAL PRIMARY KEY,
     prepur_offer TEXT,
     dd_edition TEXT,
-    dd_img TEXT,
+    dd_img bytea,
     about TEXT,
-    game_id INTEGER REFERENCES game(game_id)
+    game_id INTEGER REFERENCES game(id)
 );
 
 CREATE TABLE carousel (
     id SERIAL PRIMARY KEY,
-    img_url TEXT,
+    img_url bytea,
     developer TEXT,
     publisher TEXT,
     release_date TEXT,
     tags TEXT,
     title TEXT,
-    game_id INTEGER REFERENCES game(game_id)
+    game_id INTEGER REFERENCES game(id)
 );
 
 CREATE TABLE min (
@@ -43,7 +43,7 @@ CREATE TABLE min (
     directX TEXT,
     storage TEXT,
     additional_notes TEXT,
-    game_id INTEGER REFERENCES game(game_id)
+    game_id INTEGER REFERENCES game(id)
 );
 
 CREATE TABLE req (
@@ -56,7 +56,7 @@ CREATE TABLE req (
     directX TEXT,
     storage TEXT,
     additional_notes TEXT,
-    game_id INTEGER REFERENCES game(game_id)
+    game_id INTEGER REFERENCES game(id)
 );
 
 CREATE TABLE comments (
@@ -67,7 +67,7 @@ CREATE TABLE comments (
     recommended TEXT,
     time TIMESTAMP,
     replay TEXT,
-    game_id INTEGER REFERENCES game(game_id)
+    game_id INTEGER REFERENCES game(id)
 );
 
 CREATE TABLE logIn (
