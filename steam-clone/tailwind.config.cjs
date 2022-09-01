@@ -6,6 +6,9 @@ module.exports = {
   ],
   theme: {
     extend: {},
+    backgroundImage: {
+      'wishlist': "url('https://store.akamai.steamstatic.com/public/images/v6/storemenu/background_wishlist.jpg')"
+    }
   },
   plugins: [],
 }
