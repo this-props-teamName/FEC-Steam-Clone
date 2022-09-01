@@ -5,10 +5,12 @@ module.exports = {
     "./components/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
-    extend: {},
-    backgroundImage: {
-      'wishlist': "url('https://store.akamai.steamstatic.com/public/images/v6/storemenu/background_wishlist.jpg')"
-    }
+    extend: {
+      backgroundImage: {
+        'wishlist': "url('https://store.akamai.steamstatic.com/public/images/v6/storemenu/background_wishlist.jpg')",
+        'cart': "url(https://store.akamai.steamstatic.com/public/images/v6/storemenu/background_cart.jpg)"
+      }
+    },
   },
   plugins: [],
 }
