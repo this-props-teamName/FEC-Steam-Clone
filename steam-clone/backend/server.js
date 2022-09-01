@@ -20,7 +20,7 @@ const pool = new pg.Pool({
 });
 
 //middleware for json data, cors, and static file
-app.use(express.static("static"));
+app.use(express.static("static")); // No static file - this might cause issues
 app.use(express.json());
 app.use(cors());
 
@@ -29,6 +29,60 @@ const unknownHTTP = (req, res, next) => {
     res.sendStatus(404);
     next();
 };
+
+//////////////////////////////////////////////////////////////////////////////////
+//Get requests for all 7 of our tables
+//////////////////////////////////////////////////////////////////////////////////
+app.get('/api/game', (req, res, next) =>{
+    pool.query('SELECT * FROM game').then((data) =>{
+        res.send(data.rows);
+    })
+    .catch(next);
+})
+
+app.get('/api/gameInfo', (req, res, next) =>{
+    pool.query('SELECT * FROM gameInfo').then((data) =>{
+        res.send(data.rows);
+    })
+    .catch(next);
+})
+
+app.get('/api/carousel', (req, res, next) =>{
+    pool.query('SELECT * FROM carousel').then((data) =>{
+        res.send(data.rows);
+    })
+    .catch(next);
+})
+
+app.get('/api/min', (req, res, next) =>{
+    pool.query('SELECT * FROM min').then((data) =>{
+        res.send(data.rows);
+    })
+    .catch(next);
+})
+
+app.get('/api/req', (req, res, next) =>{
+    pool.query('SELECT * FROM req').then((data) =>{
+        res.send(data.rows);
+    })
+    .catch(next);
+})
+
+app.get('/api/comments', (req, res, next) =>{
+    pool.query('SELECT * FROM comments').then((data) =>{
+        res.send(data.rows);
+    })
+    .catch(next);
+})
+
+app.get('/api/logIn', (req, res, next) =>{
+    pool.query('SELECT * FROM logIn').then((data) =>{
+        res.send(data.rows);
+    })
+    .catch(next);
+})
+
+
 
 
 
