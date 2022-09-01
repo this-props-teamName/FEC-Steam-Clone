@@ -4,10 +4,48 @@ const Footer = () => {
       {/* footer spacer */}
       <div className="h-[290px]"></div>
       {/* footer */}
-      <footer className="bg-[#171A21] h-[182px] w-full absolute bottom-0">
+      <footer className="bg-[#171A21] h-[182px] w-full font-sans left-0 right-0 absolute bottom-0 pt-[16px] pr-[0px] pb-[60px] pl-[0px]">
           {/* footer content */}
-          <div>
-              blah
+          <div className="w-[940px] m-auto pt-[16px]">
+            {/* rule */}
+            <div className="h-[8px] border-t-[1px] border-solid border-[#363c44]"></div>
+            {/* steamLogo */}
+            <div className="float-right pt-[2px]">
+              <img className="border-0" src="https://store.akamai.steamstatic.com/public/images/v6/logo_steam_footer.png" alt="Valve Software"/>
+            </div>
+            {/* Valve Logo */}
+            <div className="float-left pt-[2px]">
+              <a href="http://www.valvesoftware.com" target="_blank" rel="noreferrer">
+                <img className="border-0 h-[25px] w-auto" src="https://store.akamai.steamstatic.com/public/images/footerLogo_valve_new.png" alt="Valve Software" />
+              </a>
+            </div>
+            {/* Footer Text */}
+            <div className="float-left ml-[12px] text-[#8F98A0] text-[12px] leading-[16px]">
+              <div>
+                © 2022 Valve Corporation. All rights reserved. All trademarks are property of their respective owners in the US and other countries.
+              </div>
+              <div>
+                VAT included in all prices where applicable.&nbsp;&nbsp;
+                <a href="https://store.steampowered.com/privacy_agreement/?snr=1_44_44_" target="_blank" rel="noreferrer">Privacy Policy</a>
+                &nbsp; | &nbsp;
+                <a href="https://store.steampowered.com/legal/?snr=1_44_44_" target="blank" rel="noreferrer">Legal</a>
+                &nbsp; | &nbsp;
+                <a href="https://store.steampowered.com/subscriber_agreement/?snr=1_44_44_" target="blank" rel="noreferrer">Steam Subscriber Agreement</a>
+                &nbsp; | &nbsp;
+                <a href="https://store.steampowered.com/steam_refunds/?snr=1_44_44_" target="blank" rel="noreferrer">Refunds</a>
+                &nbsp; | &nbsp;
+                <a href="https://store.steampowered.com/cookiepreferences/?snr=1_44_44_" target="blank" rel="noreferrer">Cookies</a>
+              </div>
+            </div>
+            {/*  */}
+            <div className="clear-left"></div>
+            <br/>
+            {/* rule */}
+            <div className="h-[8px] border-t-[1px] border-solid border-[#363c44]"></div>
+            {/* valve links */}
+            <div className="mt-[8px] float-left">
+
+            </div>
           </div>
       </footer>
     </>
