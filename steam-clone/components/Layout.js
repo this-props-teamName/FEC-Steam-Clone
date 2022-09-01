@@ -8,8 +8,10 @@ const Layout = ({children}) => {
   return (
     <>
       <Header/>
-        <div>
-          <MainBody /> {children}
+      <div className="bg-[#1e2837]">
+          <div className='min-w-[972px] bg-no-repeat bg-[top_center] bg-[url("https://cdn.cloudflare.steamstatic.com/steam/apps/990080/page_bg_generated_v6b.jpg?t=1661535551")]'>
+            <MainBody /> {children}
+          </div>
         </div>
       <Footer/>
     </>
