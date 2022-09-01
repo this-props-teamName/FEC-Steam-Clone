@@ -9,8 +9,8 @@ module.exports = {
       // use font-sans or font-serif to access
       'sans': ['Helvetica', 'Arial', 'sans-serif'],
       'serif': ['Motiva Sans' , 'sans-serif']
-    }
-    // extend: {},
+    },
+    extend: {},
   },
   plugins: [],
 }

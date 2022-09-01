@@ -43,7 +43,7 @@ const Footer = () => {
             {/* rule */}
             <div className="h-[8px] border-t-[1px] border-solid border-[#363c44]"></div>
             {/* valve links */}
-            <div className="mt-[8px] float-left font-serif font-normal text-[13px] text-[#61686D]">
+            <div className="flex mt-[8px] float-left font-serif font-normal text-[13px] text-[#61686D]">
               <a className="text-[#C6D4DF]" href="http://www.valvesoftware.com/about" target="_blank" rel="noreferrer">About Valve</a>
               &nbsp; | &nbsp;
               <a className="text-[#C6D4DF]" href="http://www.valvesoftware.com" target="_blank" rel="noreferrer">Jobs</a>
@@ -56,16 +56,16 @@ const Footer = () => {
               &nbsp; | &nbsp;
               <a className="text-[#C6D4DF]" href="https://store.steampowered.com/digitalgiftcards/?snr=1_44_44_" target="_blank" rel="noreferrer">Gift Cards</a>
               &nbsp; | &nbsp;
-              {/* problems with images; if images are removed they properly align */}
-              <a className="text-[#C6D4DF]" href="https://steamcommunity.com/linkfilter/?url=http://www.facebook.com/Steam" target="_blank" rel="noopener">
-                <img className="align-bottom border-none" src="https://store.akamai.steamstatic.com/public/images/ico/ico_facebook.gif" />
-                Steam
-              </a>
-              &nbsp; | &nbsp;
-              <a className="text-[#C6D4DF]" href="http://twitter.com/steam" target="_blank" rel="noreferrer">
-                <img className="align-bottom border-none" src="https://store.akamai.steamstatic.com/public/images/ico/ico_twitter.gif" />
-                @steam
-              </a>
+              {/* slight differences but we can fix it later */}
+                <a className="text-[#C6D4DF] flex flex-nowrap" href="https://steamcommunity.com/linkfilter/?url=http://www.facebook.com/Steam" target="_blank" rel="noopener">
+                  <img className="align-bottom border-none m-0 p-0 h-[16px] w-[16px]" src="https://store.akamai.steamstatic.com/public/images/ico/ico_facebook.gif" />
+                   Steam
+                </a>
+                &nbsp; | &nbsp;
+                <a className="text-[#C6D4DF] flex flex-nowrap" href="http://twitter.com/steam" target="_blank" rel="noreferrer">
+                  <img className="align-bottom border-none m-0 p-0 h-[16px] w-[16px]" src="https://store.akamai.steamstatic.com/public/images/ico/ico_twitter.gif" />
+                  @steam
+                </a>
             </div>
           </div>
       </footer>
