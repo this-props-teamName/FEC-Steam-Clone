@@ -1,5 +1,4 @@
 import Link from 'next/link'
-
 const NavBar = () => {
   return (
     <div className="bg-transparent pl-0 pr-0 h-[66px] min-w-[940px]"> {/*store_hander*/}
@@ -20,9 +19,27 @@ const NavBar = () => {
 
 {/*NavBar Start*/}
           <div className= "absolute left-0 right-0 top-[24px] h-[49px]"> {/*store_nav_area*/}
-            <div className= "shadow-[0_0_3px_rgb(0_0_0/40%)] h-[35px] mt-[7px] mr-[0px] mb-[7px] ml[0px] bg-rgb(103_193_243_0.4)">
+            <div className= "shadow-[0_0_3px_rgb(0_0_0/40%)] h-[35px] my-[7px] mx-[0px]">
               <div className= "h-[35px] flex">
-                <div className= "p-[1px] inline-block no-underline"></div>
+                <div className= "p-[1px] inline-block no-underline cursor-pointer">
+                  <span className= "p-[1px] inline-block no-underline cursor-pointer h-[35px] flex pr-[10px] mr-[0px]">
+                    <img className= "w-[16px] h-[16px] align-text-bottom mr-[6px]" src="https://avatars.akamai.steamstatic.com/bb3ef3a7103423dbfe4947ad72c6a43a84b53fa9.jpg"></img>
+
+{/* Start of Your Store */}
+                    <a clssName= "inline text-[#e5e5e5]" href="javascript:void(0);">Your Store</a>
+                    <span></span>
+                  </span>
+                </div>
+                <div className="visible top-[42px] left-[0px] block opacity-100 z-200 absolute shadow-[0_0_12px_rgb(#00000)]">
+                  <div className= "flex flex-col"> 
+                    <a className= "w-fit border-solid border-b-[2px] border-white px-[1px] pt-[3px] pb-[2px] mt-[0px] mr-[10px] mb-[3px] ml-[13px] text-[12px] font-normal" href="https://store.steampowered.com/?snr=1_5_9__12">Home</a>
+                    <a className= "w-fit border-solid border-b-[2px] border-white px-[1px] pt-[3px] pb-[2px] mt-[0px] mr-[10px] mb-[3px] ml-[13px] text-[12px] font-normal" href="https://steamcommunity.com/my/followedgames/?snr=1_5_9__12">Followed Games and Software</a>
+                    <div className = "mx-[10px] my-[5px] h-[1px]"></div>
+                    <div className= " font-normal mt-[16px] mb-[opx] ml-[14px] mr-[13px] uppercase tracking-[.07em] text-[11px] text-[#2EBFFF]">Subscriptions</div>
+
+
+                  </div>
+                </div>
               </div>
             </div>
           </div>
