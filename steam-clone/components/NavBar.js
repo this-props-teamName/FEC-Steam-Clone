@@ -57,8 +57,7 @@ const NavBar = () => {
 
 {/* News and Noteworthy */}
                 <div className= "p-[1px] inline-block no-underline cursor-pointer">
-                  <span className= "p-[1px] inline-block no-underline cursor-pointer h-[35px] flex pr-[10px] mr-[0px]">
-                    <img className= "ml-[-5px] w-[16px] h-[16px] align-text-bottom mr-[6px]" src="https://avatars.akamai.steamstatic.com/bb3ef3a7103423dbfe4947ad72c6a43a84b53fa9.jpg"></img>
+                  <span className= "pr-[10px] mr-[0px] inline-block no-underline cursor-pointer h-[35px] flex pr-[10px] mr-[0px]">
                     <a clssName= "inline text-[#e5e5e5]" href="javascript:void(0);">News and Noteworthy</a>
                     <span></span>
                   </span>
