@@ -1,4 +1,3 @@
-import Link from "next/link"
 
 const Header = () => {
   return (
@@ -8,20 +7,20 @@ const Header = () => {
           <img className="h-[44px] w-[176px]" src="https://store.akamai.steamstatic.com/public/shared/images/header/logo_steam.svg?t=962016"/>
         </div>
         <div className="absolute left-[200px]">
-          <a className="block relative pt-[45px] pb-[7px] pl-[7px] pr-[7px] float-left text-[14px] leading-[16px] uppercase text-[#b8b6b4]">
-            <Link href="/">Store</Link>
+          <a className="block hover:text-white relative pt-[45px] pb-[7px] pl-[7px] pr-[7px] float-left text-[14px] leading-[16px] uppercase text-[#b8b6b4]">
+           Store
           </a>
-          <a className="block relative pt-[45px] pb-[7px] pl-[7px] pr-[7px] float-left text-[14px] leading-[16px] uppercase text-[#b8b6b4]">
-            <Link href="/"> Community</Link>
+          <a className="block hover:text-white relative pt-[45px] pb-[7px] pl-[7px] pr-[7px] float-left text-[14px] leading-[16px] uppercase text-[#b8b6b4]">
+            Community
           </a>
-          <a className="block relative pt-[45px] pb-[7px] pl-[7px] pr-[7px] float-left text-[14px] leading-[16px] uppercase text-[#b8b6b4]">
-            <Link href="/">UserName Here</Link>
+          <a className="block hover:text-white relative pt-[45px] pb-[7px] pl-[7px] pr-[7px] float-left text-[14px] leading-[16px] uppercase text-[#b8b6b4]">
+           UserName Here
           </a>
-          <a className="block relative pt-[45px] pb-[7px] pl-[7px] pr-[7px] float-left text-[14px] leading-[16px] uppercase text-[#b8b6b4]">
-            <Link href="/">Chat</Link>
+          <a className="block hover:text-white  relative pt-[45px] pb-[7px] pl-[7px] pr-[7px] float-left text-[14px] leading-[16px] uppercase text-[#b8b6b4]">
+          Chat
           </a>
-          <a className="block relative pt-[45px] pb-[7px] pl-[7px] pr-[7px] float-left text-[14px] leading-[16px] uppercase text-[#b8b6b4]">
-            <Link href="/">Support</Link>
+          <a className="block hover:text-white relative pt-[45px] pb-[7px] pl-[7px] pr-[7px] float-left text-[14px] leading-[16px] uppercase text-[#b8b6b4]">
+           Support
           </a>
           {/* -----Hidden hover for Store */}
                 {/* the followig is the style of hover when appearinng */}
@@ -102,21 +101,21 @@ const Header = () => {
           </div>
         </div>
         <div className="absolute right-0 top-[6px] h-[21px] leading-[21px] text-[#b8b6b4] text-[11px] z-[401]">
-          <div className="leading-[24px] align-top inline-block align-top">
+          <div className="leading-[24px] align-top inline-block">
               <div className="inline-block relative leading-[24px] mr-[3px]" >
-                <a className=" inline-block  pl-[35px] pr-[9px] bg-[bottom_5px_left_10px] bg-[#616a72] bg-[url('https://store.akamai.steamstatic.com/public/shared/images/header/btn_header_installsteam_download.png?v=1')] bg-no-repeat leading-[24px] text-[11px] h-[21px] text-[#e5e4dc]">Install Steam</a>
+                <a className=" inline-block pl-[35px] pr-[9px] bg-[bottom_5px_left_10px] bg-[#616a72] bg-[url('https://store.akamai.steamstatic.com/public/shared/images/header/btn_header_installsteam_download.png?v=1')] bg-no-repeat leading-[24px] text-[11px] h-[24px] text-[#e5e4dc]">Install Steam</a>
               </div>
-              <div className="inline-block bg-[#262625] p-[4px]">
-                <div className="inline-block my-0 mx-[4px] ">
-                    <img className="w-[12px] h-[10px]  " src='https://store.akamai.steamstatic.com/public/shared/images/responsive/header_menu_notifications.png'/>
+              <div className="inline-block">
+                <div className="inline-block leading-[24px] my-0 mr-[3px] ml-[8px] px-[8px] py-[0px] bg-[#262625]">
+                    <img className=" w-[12px] h-[10px] " src='https://store.akamai.steamstatic.com/public/shared/images/responsive/header_menu_notifications.png'/>
                 </div>
               </div>
               <span className="inline-block pl-[4px] leading-[25px] mr-[5px] pr-[18px] bg-[url('https://store.akamai.steamstatic.com/public/shared/images/popups/btn_arrow_down_padded.png')] bg-no-repeat bg-[center_right] text-[12px]" >
                 username here
               </span>
-              <div className="inline-block ml-[3px]" > 
-                  <img className="p-[1px]" src='https://avatars.akamai.steamstatic.com/c34d6c555878a155a93565791de54510e36154bd.jpg'/>
-              </div>
+          </div>
+           <div className="inline-block relative ml-[3px] bg-gradient-to-r from-[#555555] to-[#6A6A6A]  h-[34px] w-[34px] p-[1px]" > 
+                  <img className="p-[1px] leading-[21px] " src='https://avatars.akamai.steamstatic.com/c34d6c555878a155a93565791de54510e36154bd.jpg'/>
           </div>
         </div>
       </div>
