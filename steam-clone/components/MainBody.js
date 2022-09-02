@@ -3,7 +3,7 @@ import PageContent from './PageContent'
 
 const MainBody = () => {
   return (
-    <div className="flex justify-center">MainBody
+    <div>MainBody
         <NavBar />
         <PageContent />
     </div>
