@@ -4,7 +4,7 @@ const Footer = () => {
       {/* footer spacer */}
       <div className="h-[290px]"></div>
       {/* footer */}
-      <footer className="bg-[#171A21] h-[182px] w-full font-sans left-0 right-0 absolute bottom-0 pt-[16px] pr-[0px] pb-[60px] pl-[0px]">
+      <footer className="bg-[#171A21] h-[182px] w-full font-sans left-0 right-0 bottom-0 pt-[16px] pr-[0px] pb-[60px] pl-[0px]">
           {/* footer content */}
           <div className="w-[940px] m-auto pt-[16px]">
             {/* rule */}
