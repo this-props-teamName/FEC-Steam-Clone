@@ -1,9 +1,15 @@
 import Link from 'next/link'
+import RightColumn from './RightColumn'
+import LeftColumn from './LeftColumn'
 
 const GameInfo = () => {
   return (
-    <div>GameInfo</div>
+    <div>
+      <RightColumn/>
+      <LeftColumn/>
+      GameInfo
+    </div>
   )
 }
 
-export default GameInfo
+export default GameInfo;

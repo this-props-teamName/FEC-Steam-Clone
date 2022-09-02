@@ -1,8 +1,8 @@
-
 const Header = () => {
   return (
     <header className="bg-[#171a21] bg-center-top min-w-[940px]  font-sans font-normal text-[14px] px-[16px]">
       <div className="relative h-[104px] w-[940px] mx-auto my-0 z-[402]">
+
         <div className="float-left pt-[30px] mr-[40px]">
           <img className="h-[44px] w-[176px]" src="https://store.akamai.steamstatic.com/public/shared/images/header/logo_steam.svg?t=962016"/>
         </div>
@@ -116,6 +116,7 @@ const Header = () => {
           </div>
            <div className="inline-block relative ml-[3px] bg-gradient-to-r from-[#555555] to-[#6A6A6A]  h-[34px] w-[34px] p-[1px]" > 
                   <img className="p-[1px] leading-[21px] " src='https://avatars.akamai.steamstatic.com/c34d6c555878a155a93565791de54510e36154bd.jpg'/>
+
           </div>
         </div>
       </div>
