@@ -39,7 +39,7 @@ const NavBar = () => {
                 </div>
 
 {/*Store Dropdown*/}
-                <div className = "z-[200] absolute shadow-[0_0_12px_rgb(0,0,0)] visible top-[42px] left-[0px] block opacity-100">
+                <div className = "invisible z-[200] absolute shadow-[0_0_12px_rgb(0,0,0)] top-[42px] left-[0px] block opacity-100">
                   <div className = {navStyles.store_popup_block}>
                     <a className= {`${navStyles.popup_menu_item} ${navStyles.popup_menu}`} href="https://store.steampowered.com/?snr=1_5_9__12">Home</a>
                     <a className= {`${navStyles.popup_menu_item} ${navStyles.popup_menu}`} href="https://store.steampowered.com/communityrecommendations/?snr=1_5_9__12">Community Recommendations</a>
@@ -47,14 +47,27 @@ const NavBar = () => {
                     <a className= {`${navStyles.popup_menu_item} ${navStyles.popup_menu}`} href="https://store.steampowered.com/curators/?snr=1_5_9__12">Steam Curators</a>
                   </div>
                 </div>
+              <div></div>
 
 {/* News and Noteworthy */}
                 <div className= {navStyles.tab}>
                   <span className= {navStyles.span}>
-                    <a className= "inline text-[#e5e5e5]">News and Noteworthy</a>
+                    <a className= "inline text-[#e5e5e5]">News & Noteworthy</a>
                     <span></span>
                   </span>
                 </div>
+
+{/* News and Noteworthy Dropdown */}
+                <div className="invisible top-[42px] left-[96.1125px] block opacity-100 z-[200] absolute shadow-[0_0_12px_rgb(0,0,0)]">
+                  <div className={navStyles.store_popup_block}>
+                    <a className= {`${navStyles.popup_menu_item} ${navStyles.popup_menu}`} href="https://store.steampowered.com/search/?filter=topsellers&snr=1_5_9__12">Top Sellers</a>
+                    <a className= {`${navStyles.popup_menu_item} ${navStyles.popup_menu}`} href="https://store.steampowered.com/explore/new/?snr=1_5_9__12">New & Trending</a>
+                    <a className= {`${navStyles.popup_menu_item} ${navStyles.popup_menu}`} href="https://store.steampowered.com/specials/?snr=1_5_9__12">Current Specials</a>
+                    <a className= {`${navStyles.popup_menu_item} ${navStyles.popup_menu}`} href="https://store.steampowered.com/newshub/?snr=1_5_9__12">Recently Updated</a>
+                    <a className= {`${navStyles.popup_menu_item} ${navStyles.popup_menu}`} href="https://store.steampowered.com/explore/upcoming/?snr=1_5_9__12">Popular Upcoming</a>
+                  </div>
+                </div>
+ 
 
 {/* Categories */}
                 <div className= {navStyles.tab}>
@@ -93,8 +106,6 @@ const NavBar = () => {
                               <a className="absolute right-[2px] top-0 no-underline bg-[#ffff]">
                                 <img className= "w-[25px] h-[25px] absoulte top-[1px] right-[-1px] bg-[url('https://store.akamai.steamstatic.com/public/images/v6/search_icon_btn.png')]" src="https://store.akamai.steamstatic.com/public/images/blank.gif"/>
                               </a>
-
-                            
                           </div>
                       </form>
                     </div>
