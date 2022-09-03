@@ -1,11 +1,12 @@
 const Header = () => {
   return (
-    <header className="bg-[#171a21] bg-center-top min-w-[940px]  font-sans font-normal text-[14px] px-[16px]">
+    <header className="bg-[#171a21] bg-center-top min-w-[940px] font-sans font-normal text-[14px] px-[16px]">
+      {/* this div hold all the the stuff in the header */}
       <div className="relative h-[104px] w-[940px] mx-auto my-0 z-[402]">
-
         <div className="float-left pt-[30px] mr-[40px]">
           <img className="h-[44px] w-[176px]" src="https://store.akamai.steamstatic.com/public/shared/images/header/logo_steam.svg?t=962016"/>
         </div>
+        {/* The second div here is for the options layed out next to the logo */}
         <div className="absolute left-[200px]">
           <a className="block hover:text-white relative pt-[45px] pb-[7px] pl-[7px] pr-[7px] float-left text-[14px] leading-[16px] uppercase text-[#b8b6b4]">
            Store
@@ -50,6 +51,7 @@ const Header = () => {
                 ABOUT
               </a>
             </div>
+
           </div>
           {/* --------Hidden hover for Community---- */}
           {/* the followig is the style of hover when appearinng */}
@@ -100,7 +102,10 @@ const Header = () => {
               </a>
           </div>
         </div>
+
+        {/* this is the third div that containes the top right corner  and this div container has two div for each section */}
         <div className="absolute right-0 top-[6px] h-[21px] leading-[21px] text-[#b8b6b4] text-[11px] z-[401]">
+          {/* this is the first div inside the the top corner div and it deals with the install, mail and username */}
           <div className="leading-[24px] align-top inline-block">
               <div className="inline-block relative leading-[24px] mr-[3px]" >
                 <a className=" inline-block pl-[35px] pr-[9px] bg-[bottom_5px_left_10px] bg-[#616a72] bg-[url('https://store.akamai.steamstatic.com/public/shared/images/header/btn_header_installsteam_download.png?v=1')] bg-no-repeat leading-[24px] text-[11px] h-[24px] text-[#e5e4dc]">Install Steam</a>
@@ -114,6 +119,7 @@ const Header = () => {
                 username here
               </span>
           </div>
+          {/* this is the second div that deals with the just the image logo */}
            <div className="inline-block relative ml-[3px] bg-gradient-to-r from-[#555555] to-[#6A6A6A]  h-[34px] w-[34px] p-[1px]" > 
                   <img className="p-[1px] leading-[21px] " src='https://avatars.akamai.steamstatic.com/c34d6c555878a155a93565791de54510e36154bd.jpg'/>
 

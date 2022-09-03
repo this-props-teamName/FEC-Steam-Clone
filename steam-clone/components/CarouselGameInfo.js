@@ -3,6 +3,7 @@ import Link from 'next/link'
 const CarouselGameInfo = () => {
   return (
     <div className='w-[324px] ml-[0px] float-right'>
+
       <div className='p-[0px] font-sans'>
         <div className='mb-[7px]'>
           {/* need to use database for the image below */}
@@ -48,6 +49,7 @@ const CarouselGameInfo = () => {
             <a href='https://store.steampowered.com/tags/en/Adventure/?snr=1_5_9__409' className='leading-[19px] px-[7px] py-[0px] bg-[#67c1f533] max-w-[200px] mb-[3px] text-[#67c1f5] cursor-pointer rounded-[2px] mr-[2px] shadow-none truncate hover:bg-[#67c1f5] hover:text-white'> Fantasy </a>
             <a href='https://store.steampowered.com/tags/en/RPG/?snr=1_5_9__409' className='leading-[19px] px-[7px] py-[0px] bg-[#67c1f533] max-w-[200px] mb-[3px] text-[#67c1f5] cursor-pointer rounded-[2px] mr-[2px] shadow-none truncate hover:bg-[#67c1f5] hover:text-white'> RPG </a>
             <a href='/' className='leading-[19px] px-[7px] py-[0px] bg-[#67c1f533] max-w-[200px] mb-[3px] text-[#67c1f5] cursor-pointer rounded-[2px] mr-[2px] shadow-none truncate hover:bg-[#67c1f5] hover:text-white'> + </a>
+
           </div>
         </div>
       </div>
