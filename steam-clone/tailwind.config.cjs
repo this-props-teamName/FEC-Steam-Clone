@@ -10,7 +10,12 @@ module.exports = {
       'sans': ['Helvetica', 'Arial', 'sans-serif'],
       'serif': ['Motiva Sans' , 'sans-serif']
     },
-    extend: {},
+      colors: {
+        'black-rgba': 'rgba(0, 0, 0, 0.4)',
+        'blue-rgba': 'rgba(102, 193, 245, 0.2)',
+        'black-gradient-r': 'rgba(0, 0, 0, 0.8)',
+      },
+      extend: {},
   },
   plugins: [],
 }
