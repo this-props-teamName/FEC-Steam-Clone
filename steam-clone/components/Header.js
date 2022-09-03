@@ -51,6 +51,7 @@ const Header = () => {
                 ABOUT
               </a>
             </div>
+
           </div>
           {/* --------Hidden hover for Community---- */}
           {/* the followig is the style of hover when appearinng */}
@@ -101,6 +102,7 @@ const Header = () => {
               </a>
           </div>
         </div>
+
         {/* this is the third div that containes the top right corner  and this div container has two div for each section */}
         <div className="absolute right-0 top-[6px] h-[21px] leading-[21px] text-[#b8b6b4] text-[11px] z-[401]">
           {/* this is the first div inside the the top corner div and it deals with the install, mail and username */}
