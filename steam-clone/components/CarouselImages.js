@@ -45,7 +45,16 @@ const CarouselImages = () => {
         </div>
         <div className="mt-[4px] relative h-[69px] mb-[4px] z-40">
           <div className="w-[602px] left-0 absolute">
-            {/* create arrow */}
+            {/* create arrow. might need to put arrow and border into same div. 
+                position: absolute;
+                width: 0px;
+                height: 0px;
+                top: -8px;
+                left: 46px;
+                border: 12px solid white;
+                border-top: 0;
+                border-left-color: transparent;
+                border-right-color: transparent;*/}
             <div></div>
             <div className="absolute w-[116px] h-[72px] z-50 top-[-3px] border-[3px] border-[#fff]"></div>
 
