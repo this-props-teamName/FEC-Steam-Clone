@@ -112,7 +112,7 @@ const Header = () => {
               </div>
               <div className="inline-block align-top leading-[21px] ">
                 <div className="inline-block leading-[24px] my-0 mr-[3px] ml-[8px] px-[8px] py-[0px] bg-[#262625] hover:bg-[#575451]">
-                    <img className=" w-[12px] h-[10px] " src='https://store.akamai.steamstatic.com/public/shared/images/responsive/header_menu_notifications.png '/>
+                    <img className=" w-[12px] h-[10px] inline " src='https://store.akamai.steamstatic.com/public/shared/images/responsive/header_menu_notifications.png '/>
                 </div>
               </div>
               <span className="inline-block pl-[4px] leading-[25px] mr-[5px] pr-[18px] bg-[url('https://store.akamai.steamstatic.com/public/shared/images/popups/btn_arrow_down_padded.png')] bg-no-repeat bg-[center_right] text-[12px] hover:text-[#FFFFFF]" >
