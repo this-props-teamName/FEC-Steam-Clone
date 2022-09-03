@@ -9,7 +9,7 @@ import SteamCuratorsBlock from './SteamCuratorsBlock'
 
 const LeftColumn = () => {
   return (
-    <div>
+    <div className='w-[616px] float-left text-[14px] text-[#acb2b8] mt-[16px]'>
         LeftColumn
         <GameAreaPurchase/>
         {/* bannerCommunity */}

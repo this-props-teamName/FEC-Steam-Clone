@@ -4,7 +4,7 @@ import LeftColumn from './LeftColumn'
 
 const GameInfo = () => {
   return (
-    <div>
+    <div className='w-[940px] mx-auto my-0'>
       <RightColumn/>
       <LeftColumn/>
       GameInfo
