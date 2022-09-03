@@ -1,6 +1,5 @@
 const CarouselImages = () => {
   return (
-    <>
     <div className="w-[616] float-left p-[0px] m-[0px] font-sans">
       <div className = "overflow-hidden relative mr-[16px]">
         <div className ="bg-black overflow-hidden relative" >
@@ -47,8 +46,8 @@ const CarouselImages = () => {
         <div className="mt-[4px] relative h-[69px] mb-[4px] z-40">
           <div className="w-[602px] left-0 absolute">
             {/* create arrow */}
-            <div className="absolute w-[116px] h-[77px] z-50 top-[-10px] border-[2px]"></div>
             <div></div>
+            <div className="absolute w-[116px] h-[72px] z-50 top-[-3px] border-[3px] border-[#fff]"></div>
 
             <div className="h-[65px] w-[116px] cursor-pointer text-center m-[2px] bg-black relative float-left">
               <img src="https://cdn.cloudflare.steamstatic.com/steam/apps/990080/ss_725bf58485beb4aa37a3a69c1e2baa69bf3e4653.116x65.jpg?t=1661535551"/>
@@ -83,10 +82,6 @@ const CarouselImages = () => {
         </div>
       </div>
     </div>
-    <div className="text-[12px] p-0 m-0 block font-sans">
-      <div className="w-[940px] mx-auto my-0 bg-[#00000033] mb-[16px]"></div>
-    </div>
-    </>
   )
 }
 
