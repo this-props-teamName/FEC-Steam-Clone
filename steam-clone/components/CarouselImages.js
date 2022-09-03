@@ -1,5 +1,6 @@
 const CarouselImages = () => {
   return (
+    <>
     <div className="w-[616] float-left p-[0px] m-[0px] font-sans">
       <div className = "overflow-hidden relative mr-[16px]">
         <div className ="bg-black overflow-hidden relative" >
@@ -68,20 +69,24 @@ const CarouselImages = () => {
         </div>
         <div className="relative h-[18px]">
 
-          {/* fix the hover effects and the right scroll bar clicker */}
-          <div className="absolute w-[38px] top-0 bottom-0 rounded-[3px] cursor-pointer bg-[#233c5166]">
-            <span className="h-[7px] w-[9px] ml-[13px] mt-[5px] bg-no-repeat bg-[left_18px] bg-[right_-18px] hover:bg-[#446480] bg-0 bg-[url('https://store.cloudflare.steamstatic.com/public/images//v6/icon_cluster_controls.png')]"></span>
+          {/* fix the hover effects */}
+          <div className="absolute w-[38px] top-0 bottom-0 rounded-[3px] block cursor-pointer bg-[#233c5166] hover:bg-[#446480]">
+            <span className="h-[7px] w-[9px] ml-[13px] mt-[5px] inline-block bg-no-repeat bg-right-top hover:bg-right bg-0 bg-[url('https://store.cloudflare.steamstatic.com/public/images//v6/icon_cluster_controls.png')]"></span>
           </div>
-          <div className="absolute left-[39px] right-[39px] top-0 bottom-0 bg-[#00000033]  rounded-[3px] ">
+          <div className="absolute left-[39px] right-[39px] top-0 bottom-0 bg-[#00000033] rounded-[3px] ">
             <div></div>
             <div className="absolute left-0 bg-[#233c5166] h-[18px] w-[60px] rounded-[3px] hover:bg-[#446480] cursor-pointer e"></div>
           </div>
-          <div className="absolute w-[38px] top-0 bottom-0 rounded-[3px] cursor-pointer bg-[#233c5166]">
-            <span className="h-[7px] w-[9px] ml-[15px] mt-[5px] bg-no-repeat bg-[left_9px] bg-[right_-9px] hover:bg-[#446480] right-0 bg-0 bg-[url('https://store.cloudflare.steamstatic.com/public/images//v6/icon_cluster_controls.png')]"></span>
+            <div className="absolute w-[38px] top-0 bottom-0 rounded-[3px] cursor-pointer right-0 bg-[#233c5166] hover:bg-[#446480]">
+            <span className='h-[7px] w-[9px] ml-[15px] mt-[5px] inline-block bg-no-repeat bg-top hover:bg-center bg-[url("https://store.cloudflare.steamstatic.com/public/images//v6/icon_cluster_controls.png")]'></span>
           </div>
         </div>
       </div>
     </div>
+    <div className="text-[12px] p-0 m-0 block font-sans">
+      <div className="w-[940px] mx-auto my-0 bg-[#00000033] mb-[16px]"></div>
+    </div>
+    </>
   )
 }
 

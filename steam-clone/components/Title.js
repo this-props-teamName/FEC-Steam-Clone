@@ -10,7 +10,7 @@ const Title = () => {
         <a className="text-[14px] text-[#8f98a0] hover:text-[#c6d4df]" href='https://store.steampowered.com/app/990080/?snr=1_5_9__205'>{' Hogwarts'}</a>
       </div>
       <div className='mx-auto my-[0px]'>
-        <div className='text-[26px] text-ellipsis leading-[32px] text-white'>
+        <div className='text-[26px] text-ellipsis leading-[32px] text-[#fff]'>
           Put title here
           <div className='relative float-right'>
             <a href='https://steamcommunity.com/app/990080'>

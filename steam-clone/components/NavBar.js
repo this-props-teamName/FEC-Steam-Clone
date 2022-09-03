@@ -103,7 +103,7 @@ const NavBar = () => {
 {/* Labs */}    
                 <div className= {navStyles.tab}>
                   <span className= {navStyles.span}>
-                    <a className= "inline text-[#e5e5e5]" href="javascript:void(0);">Labs</a>
+                    <a className= "inline text-[#e5e5e5]">Labs</a>
                     <span></span>
                   </span>
                 </div>
