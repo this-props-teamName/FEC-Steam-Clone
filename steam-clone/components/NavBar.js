@@ -5,18 +5,18 @@ import navStyles from '../styles/Nav.module.css'
 
 const NavBar = () => {
   return (
-    <div className="bg-transparent pl-0 pr-0 h-[66px] min-w-[940px] mb-[16px]"> {/*store_hander*/}
-      <div className="h-[66px] relative w-[940px] my-0 mx-auto z-[300]"> {/*content*/}
+    <div className="bg-transparent pl-0 pr-0 h-[66px] min-w-[940px] mb-[16px]"> 
+      <div className="h-[66px] relative w-[940px] my-0 mx-auto z-[300]"> 
 
 {/*WishList and Cart Button*/}
-        <div className="top-[8px] absolute right-0 text-right z-[300] text-[11px]"> {/*store_control*/}
+        <div className="top-[8px] absolute right-0 text-right z-[300] text-[11px]"> 
         <div className= "text-right text-[11px]">
-          <div className="shadow-[0_0_3px_rgb(#000)] h-[20px] relative ml-[1px] rounded-[1px] float-left bg-wishlist invisible"> {/*store_header_btn_gray*/}
+          <div className="shadow-[0_0_3px_rgb(#000)] h-[20px] relative ml-[1px] rounded-[1px] float-left bg-wishlist invisible"> 
             <a className ="inline-block pt-[0px] pr-[25px] pb-[0px] pl-[25px] mt-[0px] mr-[1px] mb-[0px] ml-[1px] leading-[20px] text-center uppercase text-[11px]">
               Wishlist
-            </a> {/*wishlist_link*/}
+            </a>
             </div>
-          <div className="bg-[-34px, 30px] shadow-[0_0_3px_rgba(#000)] h-[20px] relative ml-[1px] rounded-[1px] float-left bg-cart invisible"> {/*store_header_btn_green*/}
+          <div className="bg-[-34px, 30px] shadow-[0_0_3px_rgba(#000)] h-[20px] relative ml-[1px] rounded-[1px] float-left bg-cart invisible"> 
             <a className = "inline-block py-[0px] px-[25px] mt-[0px] mr-[1px] mb-[0px] ml-[1px] leading-[20px] text-center uppercase text-[11px]">
               Cart
             </a>
@@ -25,22 +25,22 @@ const NavBar = () => {
         </div>
 
 {/*NavBar Start*/}
-          <div className= {navStyles.store_area}> {/*store_nav_area*/}
-            <div className= {navStyles.store_bg}> {/*store_nav_bg*/}
+          <div className= {navStyles.store_area}> 
+            <div className= {navStyles.store_bg}> 
               <div className= "h-[35px] flex">
 
 {/*Your Store */}
                 <div className= {navStyles.tab}>
                   <span className= {navStyles.span}>
                     {/* <img className= {navStyles.profile_img} src="https://avatars.akamai.steamstatic.com/bb3ef3a7103423dbfe4947ad72c6a43a84b53fa9.jpg"/> */}
-                    <a className= "inline text-[#e5e5e5] font-sans text-[13px]">Your Store</a>
+                    <a className= "inline text-[#e5e5e5">Your Store</a>
                     <span></span>
                   </span>
                 </div>
 
 {/*Store Dropdown*/}
                 <div className = "invisible z-[200] absolute shadow-[0_0_12px_rgb(0,0,0)] top-[42px] left-[0px] block opacity-100">
-                  <div className = {navStyles.store_popup_block}>
+                  <div className = {navStyles.popup_block}>
                     <a className= {`${navStyles.popup_menu_item} ${navStyles.popup_menu}`} href="https://store.steampowered.com/?snr=1_5_9__12">Home</a>
                     <a className= {`${navStyles.popup_menu_item} ${navStyles.popup_menu}`} href="https://store.steampowered.com/communityrecommendations/?snr=1_5_9__12">Community Recommendations</a>
                     <a className= {`${navStyles.popup_menu_item} ${navStyles.popup_menu}`} href="https://store.steampowered.com/recommended/?snr=1_5_9__12">Recently Viewed</a>
@@ -59,7 +59,7 @@ const NavBar = () => {
 
 {/* News and Noteworthy Dropdown */}
                 <div className="invisible top-[42px] left-[96.1125px] block opacity-100 z-[200] absolute shadow-[0_0_12px_rgb(0,0,0)]">
-                  <div className={navStyles.store_popup_block}>
+                  <div className={navStyles.popup_block}>
                     <a className= {`${navStyles.popup_menu_item} ${navStyles.popup_menu}`} href="https://store.steampowered.com/search/?filter=topsellers&snr=1_5_9__12">Top Sellers</a>
                     <a className= {`${navStyles.popup_menu_item} ${navStyles.popup_menu}`} href="https://store.steampowered.com/explore/new/?snr=1_5_9__12">New & Trending</a>
                     <a className= {`${navStyles.popup_menu_item} ${navStyles.popup_menu}`} href="https://store.steampowered.com/specials/?snr=1_5_9__12">Current Specials</a>
@@ -67,7 +67,6 @@ const NavBar = () => {
                     <a className= {`${navStyles.popup_menu_item} ${navStyles.popup_menu}`} href="https://store.steampowered.com/explore/upcoming/?snr=1_5_9__12">Popular Upcoming</a>
                   </div>
                 </div>
- 
 
 {/* Categories */}
                 <div className= {navStyles.tab}>
@@ -75,6 +74,19 @@ const NavBar = () => {
                     <a className= "inline text-[#e5e5e5]">Categories</a>
                     <span></span>
                   </span>
+                </div>
+
+{/* Categories Dropdown*/}
+                <div className= "top-[42px] left-[0px] block opacity-100 z-[200] absolute shadow-[0_0_12px_rgb(0,0,0)]">
+                  <div className= {`${navStyles.popup_body} ${navStyles.popup_block} ${navStyles.popup_menu_twocol_new}`}>
+                    <div className= {navStyles.popup_menu_browse}>
+                      <div className= {navStyles.popup_menu_subheader}>Special Sections</div>
+                        <a className= {navStyles.popup_menu_items} href= "https://store.steampowered.com/genre/Free%20to%20Play/?snr=1_5_9__12">Free to Play</a>
+                        <a className= {navStyles.popup_menu_items} href= "https://store.steampowered.com/demos/?snr=1_5_9__12">
+                          <span>Demos</span>
+                        </a>
+                    </div>
+                  </div>
                 </div>
 
 {/* Points Shop */}
