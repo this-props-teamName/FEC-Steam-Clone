@@ -77,7 +77,7 @@ const NavBar = () => {
                 </div>
 
 {/* Categories Dropdown*/}
-                <div className= "top-[42px] left-[0px] block opacity-100 z-[200] absolute shadow-[0_0_12px_rgb(0,0,0)]">
+                <div className= "invisible top-[42px] left-[0px] block opacity-100 z-[200] absolute shadow-[0_0_12px_rgb(0,0,0)]">
                   <div className= {`${navStyles.popup_body} ${navStyles.popup_block} ${navStyles.popup_menu_twocol_new}`}>
                     <div className= {navStyles.popup_menu_browse}>
                       <div className= {navStyles.popup_menu_subheader}>Special Sections</div>
@@ -85,6 +85,7 @@ const NavBar = () => {
                         <a className= {navStyles.popup_menu_items} href= "https://store.steampowered.com/demos/?snr=1_5_9__12">
                           <span>Demos</span>
                         </a>
+                        <a className= {navStyles.popup_menu_items} href= "https://store.steampowered.com/genre/Early%20Access/?snr=1_5_9__12"> Early Acces</a>
                     </div>
                   </div>
                 </div>
