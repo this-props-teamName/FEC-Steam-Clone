@@ -1,9 +1,15 @@
-import Link from 'next/link'
+import axios from 'axios'
 
 const CarouselGameInfo = () => {
+
+  axios.get('http://localhost:4000/api/carousel')
+    .then(res => console.log(res.data[0]));
+
+    axios.get('http://localhost:4000/api/gameInfo')
+    .then(res => console.log(res.data[0]));
+
   return (
     <div className='w-[324px] ml-[0px] float-right'>
-
       <div className='p-[0px] font-sans'>
         <div className='mb-[7px]'>
           {/* need to use database for the image below */}
