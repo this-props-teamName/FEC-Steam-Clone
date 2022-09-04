@@ -45,9 +45,18 @@ const CarouselImages = () => {
         </div>
         <div className="mt-[4px] relative h-[69px] mb-[4px] z-40">
           <div className="w-[602px] left-0 absolute">
-            {/* create arrow */}
-            <div className="absolute w-[116px] h-[77px] z-50 top-[-10px] border-[2px]"></div>
+            {/* create arrow. might need to put arrow and border into same div. 
+                position: absolute;
+                width: 0px;
+                height: 0px;
+                top: -8px;
+                left: 46px;
+                border: 12px solid white;
+                border-top: 0;
+                border-left-color: transparent;
+                border-right-color: transparent;*/}
             <div></div>
+            <div className="absolute w-[116px] h-[72px] z-50 top-[-3px] border-[3px] border-[#fff]"></div>
 
             <div className="h-[65px] w-[116px] cursor-pointer text-center m-[2px] bg-black relative float-left">
               <img src="https://cdn.cloudflare.steamstatic.com/steam/apps/990080/ss_725bf58485beb4aa37a3a69c1e2baa69bf3e4653.116x65.jpg?t=1661535551"/>
@@ -68,16 +77,16 @@ const CarouselImages = () => {
         </div>
         <div className="relative h-[18px]">
 
-          {/* fix the hover effects and the right scroll bar clicker */}
-          <div className="absolute w-[38px] top-0 bottom-0 rounded-[3px] cursor-pointer bg-[#233c5166]">
-            <span className="h-[7px] w-[9px] ml-[13px] mt-[5px] bg-no-repeat bg-[left_18px] bg-[right_-18px] hover:bg-[#446480] bg-0 bg-[url('https://store.cloudflare.steamstatic.com/public/images//v6/icon_cluster_controls.png')]"></span>
+          {/* fix the hover effects */}
+          <div className="absolute w-[38px] top-0 bottom-0 rounded-[3px] block cursor-pointer bg-[#233c5166] hover:bg-[#446480]">
+            <span className="h-[7px] w-[9px] ml-[13px] mt-[5px] inline-block bg-no-repeat bg-right-top hover:bg-right bg-0 bg-[url('https://store.cloudflare.steamstatic.com/public/images//v6/icon_cluster_controls.png')]"></span>
           </div>
-          <div className="absolute left-[39px] right-[39px] top-0 bottom-0 bg-[#00000033]  rounded-[3px] ">
+          <div className="absolute left-[39px] right-[39px] top-0 bottom-0 bg-[#00000033] rounded-[3px] ">
             <div></div>
             <div className="absolute left-0 bg-[#233c5166] h-[18px] w-[60px] rounded-[3px] hover:bg-[#446480] cursor-pointer e"></div>
           </div>
-          <div className="absolute w-[38px] top-0 bottom-0 rounded-[3px] cursor-pointer bg-[#233c5166]">
-            <span className="h-[7px] w-[9px] ml-[15px] mt-[5px] bg-no-repeat bg-[left_9px] bg-[right_-9px] hover:bg-[#446480] right-0 bg-0 bg-[url('https://store.cloudflare.steamstatic.com/public/images//v6/icon_cluster_controls.png')]"></span>
+            <div className="absolute w-[38px] top-0 bottom-0 rounded-[3px] cursor-pointer right-0 bg-[#233c5166] hover:bg-[#446480]">
+            <span className='h-[7px] w-[9px] ml-[15px] mt-[5px] inline-block bg-no-repeat bg-top hover:bg-center bg-[url("https://store.cloudflare.steamstatic.com/public/images//v6/icon_cluster_controls.png")]'></span>
           </div>
         </div>
       </div>

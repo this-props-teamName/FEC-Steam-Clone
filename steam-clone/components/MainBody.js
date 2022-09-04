@@ -3,7 +3,7 @@ import PageContent from './PageContent'
 
 const MainBody = () => {
   return (
-    <div>MainBody
+    <div>
         <NavBar />
         <PageContent />
     </div>

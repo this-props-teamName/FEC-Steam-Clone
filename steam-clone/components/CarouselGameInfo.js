@@ -27,14 +27,14 @@ const CarouselGameInfo = () => {
           <div className='truncate text-[#556772] uppercase text-[10px] pr-[10px] min-w-[94px]'>Developer:</div>
           <div className='truncate leading-[16px]'>
           {/* get developer from the backend ... NEEDS CHANGE */}
-            <a className='text-[#67c1f5] hover:text-white' href='https://store.steampowered.com/developer/WBGames?snr=1_5_9__2000'>Avalanche Software</a>
+            <a className='text-[#67c1f5] hover:text-[#fff]' href='https://store.steampowered.com/developer/WBGames?snr=1_5_9__2000'>Avalanche Software</a>
           </div>
         </div>
         <div className='flex leading-[16px]'>
           {/* get Publisher from the backend ... NEEDS CHANGE */}
           <div className='truncate text-[#556772] uppercase text-[10px] pr-[10px] min-w-[94px]'>Publisher:</div>
           <div className='truncate leading-[16px] '>
-            <a className='text-[#67c1f5] text-[12px] leading-[16px] hover:text-white' href='https://store.steampowered.com/publisher/WBGames?snr=1_5_9__2000'>Warner Bros. Games</a>
+            <a className='text-[#67c1f5] text-[12px] leading-[16px] hover:text-[#fff]' href='https://store.steampowered.com/publisher/WBGames?snr=1_5_9__2000'>Warner Bros. Games</a>
           </div>
         </div>
       </div>
@@ -43,12 +43,12 @@ const CarouselGameInfo = () => {
           <div className='leading-[19px] text-[12px] text-[#556772] font-sans'>Popular user-defined tags for this product:</div>
           <div className='truncate h-[22px] font-sans'>
             {/* get this info from the backend ... NEEDS CHANGE */}
-            <a href='https://store.steampowered.com/tags/en/Adventure/?snr=1_5_9__409' className='leading-[19px] px-[7px] py-[0px] bg-[#67c1f533] max-w-[200px] mb-[3px] text-[#67c1f5] cursor-pointer rounded-[2px] mr-[2px] shadow-none truncate hover:bg-[#67c1f5] hover:text-white'> Adventure </a>
-            <a href='https://store.steampowered.com/tags/en/Magic/?snr=1_5_9__409' className='leading-[19px] px-[7px] py-[0px] bg-[#67c1f533] max-w-[200px] mb-[3px] text-[#67c1f5] cursor-pointer rounded-[2px] mr-[2px] shadow-none truncate hover:bg-[#67c1f5] hover:text-white'> Magic </a>
-            <a href='https://store.steampowered.com/tags/en/Open%20World/?snr=1_5_9__409' className='leading-[19px] px-[7px] py-[0px] bg-[#67c1f533] max-w-[200px] mb-[3px] text-[#67c1f5] cursor-pointer rounded-[2px] mr-[2px] shadow-none truncate hover:bg-[#67c1f5] hover:text-white'> Open World </a>
-            <a href='https://store.steampowered.com/tags/en/Adventure/?snr=1_5_9__409' className='leading-[19px] px-[7px] py-[0px] bg-[#67c1f533] max-w-[200px] mb-[3px] text-[#67c1f5] cursor-pointer rounded-[2px] mr-[2px] shadow-none truncate hover:bg-[#67c1f5] hover:text-white'> Fantasy </a>
-            <a href='https://store.steampowered.com/tags/en/RPG/?snr=1_5_9__409' className='leading-[19px] px-[7px] py-[0px] bg-[#67c1f533] max-w-[200px] mb-[3px] text-[#67c1f5] cursor-pointer rounded-[2px] mr-[2px] shadow-none truncate hover:bg-[#67c1f5] hover:text-white'> RPG </a>
-            <a href='/' className='leading-[19px] px-[7px] py-[0px] bg-[#67c1f533] max-w-[200px] mb-[3px] text-[#67c1f5] cursor-pointer rounded-[2px] mr-[2px] shadow-none truncate hover:bg-[#67c1f5] hover:text-white'> + </a>
+            <a href='https://store.steampowered.com/tags/en/Adventure/?snr=1_5_9__409' className='leading-[19px] px-[7px] py-[0px] bg-[#67c1f533] max-w-[200px] mb-[3px] text-[#67c1f5] cursor-pointer rounded-[2px] mr-[2px] shadow-none truncate hover:bg-[#67c1f5] hover:text-[#fff]'> Adventure </a>
+            <a href='https://store.steampowered.com/tags/en/Magic/?snr=1_5_9__409' className='leading-[19px] px-[7px] py-[0px] bg-[#67c1f533] max-w-[200px] mb-[3px] text-[#67c1f5] cursor-pointer rounded-[2px] mr-[2px] shadow-none truncate hover:bg-[#67c1f5] hover:text-[#fff]'> Magic </a>
+            <a href='https://store.steampowered.com/tags/en/Open%20World/?snr=1_5_9__409' className='leading-[19px] px-[7px] py-[0px] bg-[#67c1f533] max-w-[200px] mb-[3px] text-[#67c1f5] cursor-pointer rounded-[2px] mr-[2px] shadow-none truncate hover:bg-[#67c1f5] hover:text-[#fff]'> Open World </a>
+            <a href='https://store.steampowered.com/tags/en/Adventure/?snr=1_5_9__409' className='leading-[19px] px-[7px] py-[0px] bg-[#67c1f533] max-w-[200px] mb-[3px] text-[#67c1f5] cursor-pointer rounded-[2px] mr-[2px] shadow-none truncate hover:bg-[#67c1f5] hover:text-[#fff]'> Fantasy </a>
+            <a href='https://store.steampowered.com/tags/en/RPG/?snr=1_5_9__409' className='leading-[19px] px-[7px] py-[0px] bg-[#67c1f533] max-w-[200px] mb-[3px] text-[#67c1f5] cursor-pointer rounded-[2px] mr-[2px] shadow-none truncate hover:bg-[#67c1f5] hover:text-[#fff]'> RPG </a>
+            <a href='/' className='leading-[19px] px-[7px] py-[0px] bg-[#67c1f533] max-w-[200px] mb-[3px] text-[#67c1f5] cursor-pointer rounded-[2px] mr-[2px] shadow-none truncate hover:bg-[#67c1f5] hover:text-[#fff]'> + </a>
 
           </div>
         </div>
