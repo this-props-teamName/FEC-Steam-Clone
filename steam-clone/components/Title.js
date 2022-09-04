@@ -4,6 +4,7 @@ const Title = () => {
   
   return (
     <div className="w-[940px] mx-auto my-0">
+      {/* the breadcrumb list above the title */}
       <div className='font-sans pt-[10px]'>
         <div className='text-[#8f98a0]'>
           <a className="text-[14px] text-[#8f98a0] font-sans hover:text-[#c6d4df]" href='https://store.steampowered.com/search/?term=&snr=1_5_9__205'>All Games</a>
@@ -13,6 +14,7 @@ const Title = () => {
           <a className="text-[14px] text-[#8f98a0] font-sans hover:text-[#c6d4df]" href='https://store.steampowered.com/app/990080/?snr=1_5_9__205'>Hogwarts Legacy</a>
         </div>
       </div>
+      {/* title/community hub div */}
       <div className='pt-[0px] max-w-[948px] block mx-auto my-[0px]'>
         <div className='relative mx-auto my-[0px] text-left min-h-[46px]'>
           <div className='relative float-right block text-left'>
