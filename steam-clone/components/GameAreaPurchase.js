@@ -1,9 +1,10 @@
+import styles from '../styles/PurchaseGame.module.css'
 export const GameAreaPurchase = () => {
   /* padding(top, right, bottom, left) */
   return (
     <div className="text-[14px] mt-[16px]">
-      <div className=" text-[#d5d6d8] mb-[28px] bg-[#2A485F] shadow-[2px_2px_15px_rgba(0,0,0,0.4)] rounded-[4px] text-[13px] font-sans font-[300] ">
-        <div className="overflow-visible pl-[16px] pt-[12px] min-h-[38px] relative pb-[12px] pl-[16px] pr-[16px] pt-[8px] ">
+      <div className=" text-[#d5d6d8] mb-[28px] shadow-[2px_2px_15px_rgba(0,0,0,0.4)] rounded-[4px] text-[13px] font-sans font-[300] ">
+        <div className={styles.gradientReleaseDate}>
           <h1 className=" text-[24px] font-normal leading-[26px] max-h-[54px]  overflow-hidden">
             Coming February 10, 2023
           </h1>
@@ -13,7 +14,7 @@ export const GameAreaPurchase = () => {
         </div>
       </div>
       <div className="mb-[28px]  ">
-        <div className="mb-0 bg-[#556873] relative rounded-[4px] font-sans font-normal text-[13px] text-[#c6d4df] p-[16px] pb-[26px] z-[1]">
+        <div className={styles.gradientPurchase}>
           <div className="float-right">
             <img
               className="inline-block w-[20px] h-[20px] bg-no-repeat  "
@@ -38,7 +39,7 @@ export const GameAreaPurchase = () => {
         </div>
       </div>
       <div className="mb-[28px]  ">
-        <div className="mb-0 bg-[#556873] relative rounded-[4px] font-sans font-normal text-[13px] text-[#c6d4df] p-[16px] pb-[26px] z-[1]">
+        <div className={styles.gradientPurchase}>
           <div className="float-right">
             <img
               className="inline-block w-[20px] h-[20px] bg-no-repeat  "
