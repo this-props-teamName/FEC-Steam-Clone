@@ -6,7 +6,7 @@ import Reviews from './Reviews'
 
 const PageContent = () => {
   return (
-    <div>PageContent
+    <div>
         <Title />
         <CarouselContainer />
         <GameInfo />

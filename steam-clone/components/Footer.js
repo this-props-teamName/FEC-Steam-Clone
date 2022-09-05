@@ -2,7 +2,7 @@ const Footer = () => {
   return (
     <>
       {/* footer spacer */}
-      <div className="h-[290px]"></div>
+      <div className="h-[107.5px]"></div>
       {/* footer */}
       <footer className="bg-[#171A21] h-[182px] w-full font-sans left-0 right-0 bottom-0 pt-[16px] pr-[0px] pb-[60px] pl-[0px]">
           {/* footer content */}
@@ -26,15 +26,15 @@ const Footer = () => {
               </div>
               <div>
                 VAT included in all prices where applicable.&nbsp;&nbsp;
-                <a className="hover:text-white" href="https://store.steampowered.com/privacy_agreement/?snr=1_44_44_" target="_blank" rel="noreferrer">Privacy Policy</a>
+                <a className="text-[#C6D4DF] hover:text-[#fff]" href="https://store.steampowered.com/privacy_agreement/?snr=1_44_44_" target="_blank" rel="noreferrer">Privacy Policy</a>
                 &nbsp; | &nbsp;
-                <a className="hover:text-white" href="https://store.steampowered.com/legal/?snr=1_44_44_" target="blank" rel="noreferrer">Legal</a>
+                <a className="text-[#C6D4DF] hover:text-[#fff]" href="https://store.steampowered.com/legal/?snr=1_44_44_" target="blank" rel="noreferrer">Legal</a>
                 &nbsp; | &nbsp;
-                <a className="hover:text-white" href="https://store.steampowered.com/subscriber_agreement/?snr=1_44_44_" target="blank" rel="noreferrer">Steam Subscriber Agreement</a>
+                <a className="text-[#C6D4DF] hover:text-[#fff]" href="https://store.steampowered.com/subscriber_agreement/?snr=1_44_44_" target="blank" rel="noreferrer">Steam Subscriber Agreement</a>
                 &nbsp; | &nbsp;
-                <a className="hover:text-white" href="https://store.steampowered.com/steam_refunds/?snr=1_44_44_" target="blank" rel="noreferrer">Refunds</a>
+                <a className="text-[#C6D4DF] hover:text-[#fff]" href="https://store.steampowered.com/steam_refunds/?snr=1_44_44_" target="blank" rel="noreferrer">Refunds</a>
                 &nbsp; | &nbsp;
-                <a className="hover:text-white" href="https://store.steampowered.com/cookiepreferences/?snr=1_44_44_" target="blank" rel="noreferrer">Cookies</a>
+                <a className="text-[#C6D4DF] hover:text-[#fff]" href="https://store.steampowered.com/cookiepreferences/?snr=1_44_44_" target="blank" rel="noreferrer">Cookies</a>
               </div>
             </div>
             {/*  */}
@@ -44,17 +44,17 @@ const Footer = () => {
             <div className="h-[8px] border-t-[1px] border-solid border-[#363c44]"></div>
             {/* valve links */}
             <div className="flex mt-[8px] float-left font-serif font-normal text-[13px] text-[#61686D]">
-              <a className="text-[#C6D4DF] hover:text-white" href="http://www.valvesoftware.com/about" target="_blank" rel="noreferrer">About Valve</a>
+              <a className="text-[#C6D4DF] hover:text-[#fff]" href="http://www.valvesoftware.com/about" target="_blank" rel="noreferrer">About Valve</a>
               &nbsp; | &nbsp;
-              <a className="text-[#C6D4DF] hover:text-white" href="http://www.valvesoftware.com" target="_blank" rel="noreferrer">Jobs</a>
+              <a className="text-[#C6D4DF] hover:text-[#fff]" href="http://www.valvesoftware.com" target="_blank" rel="noreferrer">Jobs</a>
               &nbsp; | &nbsp;
-              <a className="text-[#C6D4DF] hover:text-white" href="http://www.steampowered.com/steamworks/" target="_blank" rel="noreferrer">Steamworks</a>
+              <a className="text-[#C6D4DF] hover:text-[#fff]" href="http://www.steampowered.com/steamworks/" target="_blank" rel="noreferrer">Steamworks</a>
               &nbsp; | &nbsp;
-              <a className="text-[#C6D4DF] hover:text-white" href="https://partner.steamgames.com/steamdirect" target="_blank" rel="noreferrer">Steam Distribution</a>
+              <a className="text-[#C6D4DF] hover:text-[#fff]" href="https://partner.steamgames.com/steamdirect" target="_blank" rel="noreferrer">Steam Distribution</a>
               &nbsp; | &nbsp;
-              <a className="text-[#C6D4DF] hover:text-white" href="https://help.steampowered.com/en/?snr=1_44_44_">Support</a>
+              <a className="text-[#C6D4DF] hover:text-[#fff]" href="https://help.steampowered.com/en/?snr=1_44_44_">Support</a>
               &nbsp; | &nbsp;
-              <a className="text-[#C6D4DF] hover:text-white" href="https://store.steampowered.com/digitalgiftcards/?snr=1_44_44_" target="_blank" rel="noreferrer">Gift Cards</a>
+              <a className="text-[#C6D4DF] hover:text-[#fff]" href="https://store.steampowered.com/digitalgiftcards/?snr=1_44_44_" target="_blank" rel="noreferrer">Gift Cards</a>
               &nbsp; | &nbsp;
               {/* slight differences but we can fix it later */}
                 <a className="text-[#C6D4DF] flex flex-nowrap" href="https://steamcommunity.com/linkfilter/?url=http://www.facebook.com/Steam" target="_blank" rel="noopener">
