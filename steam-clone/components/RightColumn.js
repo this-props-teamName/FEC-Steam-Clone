@@ -13,7 +13,6 @@ export const RightColumn = () => {
       {/* following div is for if they are NOT logged in */}
       <GameRelevance/>
       <GameFeatures/>
-      {/* Supported Languages */}
       <SupportedLanguages/>
     </div>
   )
