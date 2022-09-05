@@ -26,15 +26,15 @@ const Footer = () => {
               </div>
               <div>
                 VAT included in all prices where applicable.&nbsp;&nbsp;
-                <a className="hover:text-[#fff]" href="https://store.steampowered.com/privacy_agreement/?snr=1_44_44_" target="_blank" rel="noreferrer">Privacy Policy</a>
+                <a className="text-[#C6D4DF] hover:text-[#fff]" href="https://store.steampowered.com/privacy_agreement/?snr=1_44_44_" target="_blank" rel="noreferrer">Privacy Policy</a>
                 &nbsp; | &nbsp;
-                <a className="hover:text-[#fff]" href="https://store.steampowered.com/legal/?snr=1_44_44_" target="blank" rel="noreferrer">Legal</a>
+                <a className="text-[#C6D4DF] hover:text-[#fff]" href="https://store.steampowered.com/legal/?snr=1_44_44_" target="blank" rel="noreferrer">Legal</a>
                 &nbsp; | &nbsp;
-                <a className="hover:text-[#fff]" href="https://store.steampowered.com/subscriber_agreement/?snr=1_44_44_" target="blank" rel="noreferrer">Steam Subscriber Agreement</a>
+                <a className="text-[#C6D4DF] hover:text-[#fff]" href="https://store.steampowered.com/subscriber_agreement/?snr=1_44_44_" target="blank" rel="noreferrer">Steam Subscriber Agreement</a>
                 &nbsp; | &nbsp;
-                <a className="hover:text-[#fff]" href="https://store.steampowered.com/steam_refunds/?snr=1_44_44_" target="blank" rel="noreferrer">Refunds</a>
+                <a className="text-[#C6D4DF] hover:text-[#fff]" href="https://store.steampowered.com/steam_refunds/?snr=1_44_44_" target="blank" rel="noreferrer">Refunds</a>
                 &nbsp; | &nbsp;
-                <a className="hover:text-[#fff]" href="https://store.steampowered.com/cookiepreferences/?snr=1_44_44_" target="blank" rel="noreferrer">Cookies</a>
+                <a className="text-[#C6D4DF] hover:text-[#fff]" href="https://store.steampowered.com/cookiepreferences/?snr=1_44_44_" target="blank" rel="noreferrer">Cookies</a>
               </div>
             </div>
             {/*  */}

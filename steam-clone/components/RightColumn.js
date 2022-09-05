@@ -2,9 +2,11 @@ import React from 'react'
 import GameRelevance from './GameRelevance'
 import GameFeatures from './GameFeatures'
 import SupportedLanguages from './SupportedLanguages'
+import Ratings from './Ratings'
 
 export const RightColumn = () => {
   return (
+    // Make sure to put gradients on all parent divs
     <div className="mt-[16px] overflow-hidden w-[308px] ml-[14px] float-right grid-flow-col">
       RightColumn
       {/* responsive_apppage_details_left_ctn */}
@@ -14,6 +16,7 @@ export const RightColumn = () => {
       <GameRelevance/>
       <GameFeatures/>
       <SupportedLanguages/>
+      <Ratings/>
     </div>
   )
 }
