@@ -18,6 +18,7 @@ module.exports = {
         'black-rgba': 'rgba(0, 0, 0, 0.4)',
         'blue-rgba': 'rgba(102, 193, 245, 0.2)',
         'black-gradient-r': 'rgba(0, 0, 0, 0.8)',
+        'blue-rgba-2': 'rgba(103, 193, 245, 0.1)'
       },
       extend: {},
   },
