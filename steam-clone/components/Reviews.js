@@ -1,7 +1,6 @@
 const Reviews = () => {
   return (
-    //added inline-block to fix styling issue this is different from the steam website.
-    <div className="mb-[32px] border-t-[1px] border-[#000] font-sans font-[12px] inline-block">
+    <div className="mb-[32px] border-t-[1px] border-[#000] font-sans font-[12px] relative">
       <div className="w-[940px] mx-auto my-0">
         <div>
           <div className="mb-[26px] bg-[#00000033] bg-[url('https://store.cloudflare.steamstatic.com/public/images/v6/maincol_gradient_rule.png')] bg-left-top bg-no-repeat">
