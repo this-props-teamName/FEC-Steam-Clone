@@ -22,6 +22,10 @@ a {
   font-family: "Helvetica", "Arial", "sans-serif"
 }
 
+*, html {
+  scroll-behavior: auto;
+}
+
 /* @media (prefers-color-scheme: dark) {
   html {
     color-scheme: dark;
