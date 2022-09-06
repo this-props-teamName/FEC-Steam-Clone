@@ -1,8 +1,11 @@
 import React, { useState } from 'react'
 
+
 const Header = () => {
   const [onHoverStore, setOnHoverStore] = useState(false); 
   const [onHoverComm, setOnHoverComm] = useState(false); 
+  const [gameInfo, setGameInfo] = useState([]); 
+
 
   function storeClass() {
  return `overflow-none ${onHoverStore  ? 'bg-[#171a21] max-w-[132px] pt-[5px] pb-[10px] pl-[15px] pr-[15px] text-left  ' : 'hidden'}`
@@ -50,25 +53,25 @@ const Header = () => {
                   p-[10px] shadow-[3px_3px_5px_-3px_#000] text-left " ></div> */}
           <div className={storeClass()} onMouseEnter={() => setOnHoverStore(true) } onMouseLeave={() => setOnHoverStore(false)}>
             <div>
-              <a className="block uppercase text-[11px] text-[#b8b6b4] pr-[10px] hover:text-[#fff] ">
+              <a className="block uppercase text-[11px] text-[#b8b6b4] pr-[10px]  py-[4px] no-underline hover:text-[#fff] ">
                 Home
               </a>
-              <a className="block uppercase text-[11px] text-[#b8b6b4] pr-[10px] hover:text-[#fff]">
+              <a className="block uppercase text-[11px] text-[#b8b6b4] pr-[10px] py-[4px] no-underline hover:text-[#fff]">
                 Discovery Queue
               </a>
-              <a className="block uppercase text-[11px] text-[#b8b6b4] pr-[10px] hover:text-[#fff] ">
+              <a className="block uppercase text-[11px] text-[#b8b6b4] pr-[10px] py-[4px] no-underline  hover:text-[#fff] ">
                 WishList
               </a>
-              <a className="block uppercase text-[11px] text-[#b8b6b4] pr-[10px] hover:text-[#fff]">
+              <a className="block uppercase text-[11px] text-[#b8b6b4] pr-[10px] py-[4px] no-underline  hover:text-[#fff]">
                 Point Shop
               </a>
-              <a className="block uppercase text-[11px] text-[#b8b6b4] pr-[10px] hover:text-[#fff]">
+              <a className="block uppercase text-[11px] text-[#b8b6b4] pr-[10px] py-[4px] no-underline  hover:text-[#fff]">
                 News
               </a>
-              <a className="block uppercase text-[11px] text-[#b8b6b4] pr-[10px] hover:text-[#fff]">
+              <a className="block uppercase text-[11px] text-[#b8b6b4] pr-[10px] py-[4px] no-underline hover:text-[#fff]">
                 Stats
               </a>
-              <a className="block uppercase text-[11px] text-[#b8b6b4] pr-[10px] hover:text-[#fff]">
+              <a className="block uppercase text-[11px] text-[#b8b6b4] pr-[10px] py-[4px] no-underline hover:text-[#fff]">
                 ABOUT
               </a>
             </div>
@@ -78,19 +81,19 @@ const Header = () => {
           {/* <div className=" absolute z-[1500] opacity-1 left-[59px] top-[64px] bg-[#171a21] max-w-[132px]
                   p-[10px] shadow-[3px_3px_5px_-3px_#000] text-left " ></div> */}
           <div className={commClass()} onMouseEnter={() => setOnHoverComm(true) } onMouseLeave={() => setOnHoverComm(false) }>
-            <a className="block no-underline uppercase text-[11px] text-[#b8b6b4] pr-[10px] hover:text-[#fff]">
+            <a className="block no-underline uppercase text-[11px] text-[#b8b6b4] pr-[10px] py-[4px] hover:text-[#fff]">
               Home
             </a>
-            <a className="block no-underline uppercase text-[11px] text-[#b8b6b4] pr-[10px] hover:text-[#fff]">
+            <a className="block no-underline uppercase text-[11px] text-[#b8b6b4] pr-[10px] py-[4px] hover:text-[#fff]">
               Discussions
             </a>
-            <a className="block no-underline uppercase text-[11px] text-[#b8b6b4] pr-[10px] hover:text-[#fff]">
+            <a className="block no-underline uppercase text-[11px] text-[#b8b6b4] pr-[10px] py-[4px] hover:text-[#fff]">
               Workshop
             </a>
-            <a className="block no-underline uppercase text-[11px] text-[#b8b6b4] pr-[10px] hover:text-[#fff]">
+            <a className="block no-underline uppercase text-[11px] text-[#b8b6b4] pr-[10px] py-[4px] hover:text-[#fff]">
               Market
             </a>
-            <a className="block no-underline uppercase text-[11px] text-[#b8b6b4] pr-[10px] hover:text-[#fff]">
+            <a className="block no-underline uppercase text-[11px] text-[#b8b6b4] pr-[10px] py-[4px] hover:text-[#fff]">
               Broadcast
             </a>
           </div>
