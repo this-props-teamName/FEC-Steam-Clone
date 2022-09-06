@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react'
 import axios from 'axios'
+import detailsStyles from '../styles/RightColumn.module.css'
 
 const Details = () => {
     const [details, getDetails] = useState();
@@ -12,7 +13,7 @@ const Details = () => {
 
     if (details) {
         return (
-            <div className="bg-black-rgba p-[16px] mb-[8px] mt-0 text-[#8f98a0] leading-[20px] block">
+            <div className={detailsStyles.details}>
                 <div className="block">
                     <div className="block">
                         <div className="block">
