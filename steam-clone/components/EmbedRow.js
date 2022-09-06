@@ -1,9 +1,8 @@
 import shareStyles from "../styles/Shared.module.css"
-import shareBox from './shareModal'
 import React, { useState } from "react"
 
 
-const remarkBox = () => {
+const EmbedRow = () => {
     const [shareBox, setShareBox] = useState(false);
     const [showEmbed, setEmbedBox] = useState(false);
     const [showReport, setReportBox] = useState(false);
@@ -27,6 +26,8 @@ const remarkBox = () => {
                 </span>
             </a>
             </div>
+
+{/* {modal for share button} */}
             {shareBox ? (
                         <div className = {shareStyles.newModal}>
                         <div className = {shareStyles.top_bar}></div>
@@ -73,4 +74,4 @@ const remarkBox = () => {
 
 
 
-export default remarkBox
+export default EmbedRow
