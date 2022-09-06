@@ -2,10 +2,39 @@ import Header from "./Header"
 import Footer from "./Footer"
 import MainBody from './MainBody'
 import ModalStyles from '../styles/Modal.module.css'
-
+import { gamesState, carouselState, systemMinState, systemReqState, commentsState } from "./state"
+import { useRecoilState } from "recoil"
+import React, {useEffect} from 'react'; 
+import axios from 'axios'
 import Link from 'next/link'
 
 const Layout = ({children}) => {
+
+const [gamesInfo, setGamesInfo] = useRecoilState(gamesState)
+const [carouselInfo, setCarouselInfo] = useRecoilState(carouselState)
+const [systemMinInfo, setSystemMinInfo] = useRecoilState(systemMinState)
+const [commentsInfo, setCommentsInfo] = useRecoilState(commentsState)
+const [systemReqInfo, setSystemReqInfo] = useRecoilState(systemReqState)
+
+
+useEffect(() => {
+  axios.get('http://localhost:4000/api/carousel')
+    .then(res => setCarouselInfo(res.data[0]));
+
+  axios.get('http://localhost:4000/api/gameInfo')
+    .then(res =>  setGamesInfo(res.data[0]));
+
+  axios.get('http://localhost:4000/api/min')
+    .then(res => setSystemMinInfo(res.data[0]));
+
+  axios.get('http://localhost:4000/api/req')
+    .then(res => setSystemReqInfo(res.data[0]));
+
+  axios.get('http://localhost:4000/api/comments')
+    .then(res => setCommentsInfo(res.data[0]));
+})
+
+
   return (
     <>
       <Header/>
