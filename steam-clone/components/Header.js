@@ -4,7 +4,6 @@ import React, { useState } from 'react'
 const Header = () => {
   const [onHoverStore, setOnHoverStore] = useState(false); 
   const [onHoverComm, setOnHoverComm] = useState(false); 
-  const [gameInfo, setGameInfo] = useState([]); 
 
 
   function storeClass() {
