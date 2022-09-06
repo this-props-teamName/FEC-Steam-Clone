@@ -36,7 +36,7 @@ const NavBar = () => {
               <div className= "h-[35px] flex">
 
 {/*Your Store */}
-                <div className= {navStyles.tab} onMouseEnter={() => setOnHoverStore(true) } onMouseLeave={() => setOnHoverStore(false) }>
+                <div className= {navStyles.tab} onMouseEnter={() => setOnHoverStore(true) } onMouseLeave={() => setOnHoverStore(false)}>
                   <span className= {navStyles.span}>
                     {/* <img className= {navStyles.profile_img} src="https://avatars.akamai.steamstatic.com/bb3ef3a7103423dbfe4947ad72c6a43a84b53fa9.jpg"/> */}
                     <a className= "inline text-[#e5e5e5">Your Store</a>
@@ -46,7 +46,8 @@ const NavBar = () => {
 
 {/*Store Dropdown*/}
                 <div 
-                  className = {onHoverStore ? 'z-[200] absolute shadow-[0_0_12px_rgb(0,0,0)] top-[42px] left-[0px] block opacity-100' : 'hidden'}>
+                  className = {onHoverStore ? 'z-[200] absolute shadow-[0_0_12px_rgb(0,0,0)] top-[42px] left-[0px] block opacity-100' : 'hidden'}
+                  onMouseLeave={() => setOnHoverStore(false) }>
                   <div className = {navStyles.popup_block}>
                     <a className= {`${navStyles.popup_menu_item} ${navStyles.popup_menu}`} href="https://store.steampowered.com/?snr=1_5_9__12">Home</a>
                     <a className= {`${navStyles.popup_menu_item} ${navStyles.popup_menu}`} href="https://store.steampowered.com/communityrecommendations/?snr=1_5_9__12">Community Recommendations</a>
@@ -57,7 +58,7 @@ const NavBar = () => {
               <div></div>
 
 {/* News and Noteworthy */}
-                <div className= {navStyles.tab} onMouseEnter={() => setOnHoverNews(true) } onMouseLeave={() => setOnHoverNews(false) }>
+                <div className= {navStyles.tab} onMouseEnter={() => setOnHoverNews(true) }>
                   <span className= {navStyles.span}>
                     <a className= "inline text-[#e5e5e5]">News & Noteworthy</a>
                     <span></span>
@@ -65,7 +66,10 @@ const NavBar = () => {
                 </div>
 
 {/* News and Noteworthy Dropdown */}
-                <div className= {onHoverNews ? ' top-[42px] left-[96.1125px] block opacity-100 z-[200] absolute shadow-[0_0_12px_rgb(0,0,0)]' : 'hidden'}>
+                <div 
+                className= {onHoverNews ? ' top-[42px] left-[96.1125px] block opacity-100 z-[200] absolute shadow-[0_0_12px_rgb(0,0,0)]' : 'hidden'}
+                onMouseLeave={() => setOnHoverNews(false) }
+                >
                   <div className={navStyles.popup_block}>
                     <a className= {`${navStyles.popup_menu_item} ${navStyles.popup_menu}`} href="https://store.steampowered.com/search/?filter=topsellers&snr=1_5_9__12">Top Sellers</a>
                     <a className= {`${navStyles.popup_menu_item} ${navStyles.popup_menu}`} href="https://store.steampowered.com/explore/new/?snr=1_5_9__12">New & Trending</a>
@@ -74,6 +78,7 @@ const NavBar = () => {
                     <a className= {`${navStyles.popup_menu_item} ${navStyles.popup_menu}`} href="https://store.steampowered.com/explore/upcoming/?snr=1_5_9__12">Popular Upcoming</a>
                   </div>
                 </div>
+
 
 {/* Categories */}
                 <div className= {navStyles.tab} onMouseEnter={() => setOnHoverCategories(true) } onMouseLeave={() => setOnHoverCategories(false)}>
@@ -249,7 +254,10 @@ const NavBar = () => {
                       <form>
                         <input type="hidden"/>
                           <div className= {navStyles.searchbar}>
-                            <input className= {navStyles.searchbox}/>
+                            <input 
+                            className= {navStyles.searchbox}
+                            placeholder= "search"
+                            />
                               <a className="absolute right-[2px] top-0 no-underline bg-[#ffff]">
                                 <img className= "w-[25px] h-[25px] absoulte top-[1px] right-[-1px] bg-[url('https://store.akamai.steamstatic.com/public/images/v6/search_icon_btn.png')]" src="https://store.akamai.steamstatic.com/public/images/blank.gif"/>
                               </a>
