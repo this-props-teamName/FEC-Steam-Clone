@@ -1,9 +1,18 @@
 import { data } from 'autoprefixer'
 import Link from 'next/link'
 import navStyles from '../styles/Nav.module.css'
+import React, { useState } from 'react'
 
 
 const NavBar = () => {
+  const [onHoverStore, setOnHoverStore] = useState(false);
+  const [onHoverNews, setOnHoverNews] = useState(false);
+  const [onHoverCategories, setOnHoverCategories] = useState(false);
+
+  function storeClass() {
+    return `overflow-none ${onHoverStore ? 'z-[200] absolute shadow-[0_0_12px_rgb(0,0,0)] top-[42px] left-[0px] block opacity-100' : 'hidden'}`
+  }
+
   return (
     <div className="bg-transparent pl-0 pr-0 h-[66px] min-w-[940px] mb-[16px]"> 
       <div className="h-[66px] relative w-[940px] my-0 mx-auto z-[300]"> 
