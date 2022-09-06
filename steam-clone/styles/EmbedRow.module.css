@@ -2,7 +2,7 @@
     padding: 16px;
     margin-bottom: 8px;
     margin-top: 0;
-    background: rgba(0, 0, 0, 0.4);
+    background: linear-gradient(to right, rgba(0,0,0,0.2) 0%,rgba(0,0,0,0.5) 100%);
 }
 
 .sharedBtn {
@@ -272,6 +272,41 @@
     outline: none;
     padding: 4px 6px;
     display: block;
-    width: calc(100% - 12px);
+    /* width: calc(100% - 12px); */
     height: 100px;
+}
+
+.w_text {
+    width: 100%;
+    height: 80px;
+    font-size: 13px;
+    line-height: 15px;
+    margin: 0 0 15px 0;
+    background-color: transparent;
+    border: none;
+    color: #8f98a0;
+}
+
+.btn_container {
+    text-align: right;
+}
+
+.btn_blue {
+    border-radius: 2px;
+    border: none;
+    padding: 1px;
+    display: inline-block;
+    cursor: pointer;
+    text-decoration: none !important;
+    color: #67c1f5 !important;
+    background: rgba( 103, 193, 245, 0.2 );
+}
+
+.btn_medium {
+    padding: 0 15px;
+    font-size: 15px;
+    line-height: 30px;
+    border-radius: 2px;
+    display: block;
+    background: transparent;
 }

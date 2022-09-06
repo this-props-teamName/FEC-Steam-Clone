@@ -107,6 +107,14 @@ const EmbedRow = () => {
                                 </div>
                                 <p className = {shareStyles.paragraph2}> Enter up to 375 characters to add a description to your widget: </p>
                                 <div className = {shareStyles.app_embed_dialog_description}>
+                                    <textarea className = {shareStyles.w_text} placeholder ="Hogwarts Legacy is an immersive, open-world action RPG. Now you can take control of the action and be at the center of your own adventure in the wizarding world."></textarea>
+                                </div>
+                                <div className = {shareStyles.btn_container}>
+                                    <a 
+                                    onClick={() => setEmbedBox(false)}
+                                    className = {shareStyles.btn_blue}>
+                                        <span className = {shareStyles.btn_medium}>Create widget</span>
+                                    </a>
                                 </div>
                             </div>
                             </div>
