@@ -9,13 +9,6 @@ const NavBar = () => {
   const [onHoverNews, setOnHoverNews] = useState(false);
   const [onHoverCategories, setOnHoverCategories] = useState(false);
 
-  const storeClass= () => {
-    return `${onHoverStore ? 'z-[200] absolute shadow-[0_0_12px_rgb(0,0,0)] top-[42px] left-[0px] block opacity-100' : 'hidden'}`
-  }
-
-  const newsClass= () => {
-    return `${onHoverNews ? ' top-[42px] left-[96.1125px] block opacity-100 z-[200] absolute shadow-[0_0_12px_rgb(0,0,0)]' : 'hidden'}`
-  }
 
   return (
     <div className="bg-transparent pl-0 pr-0 h-[66px] min-w-[940px] mb-[16px]"> 
@@ -43,7 +36,7 @@ const NavBar = () => {
               <div className= "h-[35px] flex">
 
 {/*Your Store */}
-                <div className= {navStyles.tab}>
+                <div className= {navStyles.tab} onMouseEnter={() => setOnHoverStore(true) } onMouseLeave={() => setOnHoverStore(false) }>
                   <span className= {navStyles.span}>
                     {/* <img className= {navStyles.profile_img} src="https://avatars.akamai.steamstatic.com/bb3ef3a7103423dbfe4947ad72c6a43a84b53fa9.jpg"/> */}
                     <a className= "inline text-[#e5e5e5">Your Store</a>
@@ -52,7 +45,8 @@ const NavBar = () => {
                 </div>
 
 {/*Store Dropdown*/}
-                <div className = {storeClass()} onMouseEnter={() => setOnHoverStore(true) } onMouseLeave={() => setOnHoverStore(false)}>
+                <div 
+                  className = {onHoverStore ? 'z-[200] absolute shadow-[0_0_12px_rgb(0,0,0)] top-[42px] left-[0px] block opacity-100' : 'hidden'}>
                   <div className = {navStyles.popup_block}>
                     <a className= {`${navStyles.popup_menu_item} ${navStyles.popup_menu}`} href="https://store.steampowered.com/?snr=1_5_9__12">Home</a>
                     <a className= {`${navStyles.popup_menu_item} ${navStyles.popup_menu}`} href="https://store.steampowered.com/communityrecommendations/?snr=1_5_9__12">Community Recommendations</a>
@@ -63,7 +57,7 @@ const NavBar = () => {
               <div></div>
 
 {/* News and Noteworthy */}
-                <div className= {navStyles.tab}>
+                <div className= {navStyles.tab} onMouseEnter={() => setOnHoverNews(true) } onMouseLeave={() => setOnHoverNews(false) }>
                   <span className= {navStyles.span}>
                     <a className= "inline text-[#e5e5e5]">News & Noteworthy</a>
                     <span></span>
@@ -71,7 +65,7 @@ const NavBar = () => {
                 </div>
 
 {/* News and Noteworthy Dropdown */}
-                <div className={newsClass()} onMouseEnter={() => setOnHoverNews(true) } onMouseLeave={() => setOnHoverNews(false)}>
+                <div className= {onHoverNews ? ' top-[42px] left-[96.1125px] block opacity-100 z-[200] absolute shadow-[0_0_12px_rgb(0,0,0)]' : 'hidden'}>
                   <div className={navStyles.popup_block}>
                     <a className= {`${navStyles.popup_menu_item} ${navStyles.popup_menu}`} href="https://store.steampowered.com/search/?filter=topsellers&snr=1_5_9__12">Top Sellers</a>
                     <a className= {`${navStyles.popup_menu_item} ${navStyles.popup_menu}`} href="https://store.steampowered.com/explore/new/?snr=1_5_9__12">New & Trending</a>
@@ -82,7 +76,7 @@ const NavBar = () => {
                 </div>
 
 {/* Categories */}
-                <div className= {navStyles.tab}>
+                <div className= {navStyles.tab} onMouseEnter={() => setOnHoverCategories(true) } onMouseLeave={() => setOnHoverCategories(false)}>
                   <span className= {navStyles.span}>
                     <a className= "inline text-[#e5e5e5]">Categories</a>
                     <span></span>
@@ -90,7 +84,7 @@ const NavBar = () => {
                 </div>
 
 {/* Categories Dropdown*/}
-                <div className= "hidden top-[42px] left-[0px] block opacity-100 z-[200] absolute shadow-[0_0_12px_rgb(0,0,0)]">
+                <div className= {onHoverCategories ? ' top-[42px] left-[0px] opacity-100 z-[200] absolute shadow-[0_0_12px_rgb(0,0,0)] ' : 'hidden'}>
                   <div className= {`${navStyles.popup_body} ${navStyles.popup_block} ${navStyles.popup_menu_twocol_new}`}>
                     <div className= {navStyles.popup_menu_browse}>
                       <div className= {navStyles.popup_menu_mainheader}>Special Sections</div>
