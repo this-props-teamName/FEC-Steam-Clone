@@ -12,7 +12,7 @@ INSERT INTO gameInfo (prepur_offer, dd_edition, dd_img, recent_events_img, recen
     'https://store.cloudflare.steamstatic.com/public/shared/images/game_ratings/ESRB/rp.png', 
     1);
 
-INSERT INTO carousel (title_img_url, large_img_url, small_img_url, carousel_game_info, developer, publisher, release_date, tags, title, dd_title, game_id) VALUES (
+INSERT INTO carousel (title_img_url, large_img_url, small_img_url, carousel_game_info, developer, publisher, release_date, tags, title, dd_title, genres, game_id) VALUES (
     'https://cdn.cloudflare.steamstatic.com/steam/apps/990080/header.jpg?t=1661535551',
     '{"https://cdn.cloudflare.steamstatic.com/steam/apps/990080/ss_725bf58485beb4aa37a3a69c1e2baa69bf3e4653.600x338.jpg?t=1661535551", "https://cdn.cloudflare.steamstatic.com/steam/apps/990080/ss_df93b5e8a183f7232d68be94ae78920a90de1443.600x338.jpg?t=1661535551", "https://cdn.cloudflare.steamstatic.com/steam/apps/990080/ss_94058497bf0f8fabdde17ee8d59bece609a60663.600x338.jpg?t=1661535551", "https://cdn.cloudflare.steamstatic.com/steam/apps/990080/ss_8e08976236d29b1897769257ac3c64e9264792a5.600x338.jpg?t=1661535551", "https://cdn.cloudflare.steamstatic.com/steam/apps/990080/ss_d4930d675af053dc1e61a876a34fc003e85e261f.600x338.jpg?t=1661535551"}',
     '{"https://cdn.cloudflare.steamstatic.com/steam/apps/990080/ss_725bf58485beb4aa37a3a69c1e2baa69bf3e4653.116x65.jpg?t=1661535551", "https://cdn.cloudflare.steamstatic.com/steam/apps/990080/ss_df93b5e8a183f7232d68be94ae78920a90de1443.116x65.jpg?t=1661535551", "https://cdn.cloudflare.steamstatic.com/steam/apps/990080/ss_94058497bf0f8fabdde17ee8d59bece609a60663.116x65.jpg?t=1661535551", "https://cdn.cloudflare.steamstatic.com/steam/apps/990080/ss_8e08976236d29b1897769257ac3c64e9264792a5.116x65.jpg?t=1661535551", "https://cdn.cloudflare.steamstatic.com/steam/apps/990080/ss_d4930d675af053dc1e61a876a34fc003e85e261f.116x65.jpg?t=1661535551"}',
@@ -23,6 +23,7 @@ INSERT INTO carousel (title_img_url, large_img_url, small_img_url, carousel_game
     '{"Adventure", "Magic", "Open World", "Fantasy", "RPG"}', 
     'Hogwarts Legacy',
     'Hogwarts Legacy Deluxe Edition',
+    '{"Action", "Adventure", "RPG"}',
     1);
 
 INSERT INTO min (min_required_info, os, processor, memory, graphics, directX, storage, additional_notes, copy_write, game_id) VALUES (

@@ -3,9 +3,12 @@ import GameRelevance from './GameRelevance'
 import GameFeatures from './GameFeatures'
 import SupportedLanguages from './SupportedLanguages'
 import Ratings from './Ratings'
-import EmbedRow from './EmbedRow'
+import Details from './Details'
+
 
 export const RightColumn = () => {
+
+
   return (
     // Make sure to put gradients on all parent divs
     <div className="mt-[16px] overflow-hidden w-[308px] ml-[14px] float-right grid-flow-col">
@@ -18,7 +21,7 @@ export const RightColumn = () => {
       <GameFeatures/>
       <SupportedLanguages/>
       <Ratings/>
-      <EmbedRow/>
+      <Details/>
     </div>
   )
 }

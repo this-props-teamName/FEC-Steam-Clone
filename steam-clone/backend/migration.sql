@@ -39,6 +39,7 @@ CREATE TABLE carousel (
     tags TEXT[],
     title TEXT,
     dd_title TEXT,
+    genres TEXT[],
     game_id INTEGER REFERENCES game(id)
 );
 
