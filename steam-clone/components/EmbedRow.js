@@ -89,7 +89,29 @@ const EmbedRow = () => {
                             <div className = {shareStyles.title}>Create Widget to Embed</div>
                         </div>
                     </div>
-                
+                <div className = {shareStyles.content_border}>
+                    <div className = {shareStyles.content}>
+                        <div className = {shareStyles.embed_modal}>
+                            <div className = {shareStyles.widget_create}>
+                                <p className = {shareStyles.paragraph1}> You can use this widget-maker to generate a bit of HTML that can be embedded in your website to easily allow customers to purchase this game on Steam. </p>
+                                <p className = {shareStyles.paragraph2}> There is more than one way to buy this game. Please select a specific package to create a widget for: </p>
+                                <div className = {shareStyles.w_options}>
+                                    <div className = {shareStyles.w_option}>
+                                        <input type= "radio"/>
+                                        <label> Hogwarts Legacy </label>
+                                    </div>
+                                    <div className = {shareStyles.w_option}>
+                                        <input type= "radio"/>
+                                        <label> Hogwarts Legacy Deluxe Edition </label>
+                                    </div>
+                                </div>
+                                <p className = {shareStyles.paragraph2}> Enter up to 375 characters to add a description to your widget: </p>
+                                <div className = {shareStyles.app_embed_dialog_description}>
+                                </div>
+                            </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             ) : null}
         </div>
