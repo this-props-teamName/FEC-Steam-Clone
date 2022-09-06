@@ -15,7 +15,6 @@ export const RightColumn = () => {
   return (
     // Make sure to put gradients on all parent divs
     <div className="mt-[16px] overflow-hidden w-[308px] ml-[14px] float-right grid-flow-col">
-      RightColumn
       {/* responsive_apppage_details_left_ctn */}
       <div></div>
       <div className={rightColumnStyles.rightColumn}>Is this game relevant to you?</div>
