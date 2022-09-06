@@ -1,9 +1,22 @@
 import { data } from 'autoprefixer'
 import Link from 'next/link'
 import navStyles from '../styles/Nav.module.css'
+import React, { useState } from 'react'
 
 
 const NavBar = () => {
+  const [onHoverStore, setOnHoverStore] = useState(false);
+  const [onHoverNews, setOnHoverNews] = useState(false);
+  const [onHoverCategories, setOnHoverCategories] = useState(false);
+
+  const storeClass= () => {
+    return `${onHoverStore ? 'z-[200] absolute shadow-[0_0_12px_rgb(0,0,0)] top-[42px] left-[0px] block opacity-100' : 'hidden'}`
+  }
+
+  const newsClass= () => {
+    return `${onHoverNews ? ' top-[42px] left-[96.1125px] block opacity-100 z-[200] absolute shadow-[0_0_12px_rgb(0,0,0)]' : 'hidden'}`
+  }
+
   return (
     <div className="bg-transparent pl-0 pr-0 h-[66px] min-w-[940px] mb-[16px]"> 
       <div className="h-[66px] relative w-[940px] my-0 mx-auto z-[300]"> 
@@ -39,7 +52,7 @@ const NavBar = () => {
                 </div>
 
 {/*Store Dropdown*/}
-                <div className = "hidden z-[200] absolute shadow-[0_0_12px_rgb(0,0,0)] top-[42px] left-[0px] block opacity-100">
+                <div className = {storeClass()} onMouseEnter={() => setOnHoverStore(true) } onMouseLeave={() => setOnHoverStore(false)}>
                   <div className = {navStyles.popup_block}>
                     <a className= {`${navStyles.popup_menu_item} ${navStyles.popup_menu}`} href="https://store.steampowered.com/?snr=1_5_9__12">Home</a>
                     <a className= {`${navStyles.popup_menu_item} ${navStyles.popup_menu}`} href="https://store.steampowered.com/communityrecommendations/?snr=1_5_9__12">Community Recommendations</a>
@@ -58,7 +71,7 @@ const NavBar = () => {
                 </div>
 
 {/* News and Noteworthy Dropdown */}
-                <div className="hidden top-[42px] left-[96.1125px] block opacity-100 z-[200] absolute shadow-[0_0_12px_rgb(0,0,0)]">
+                <div className={newsClass()} onMouseEnter={() => setOnHoverNews(true) } onMouseLeave={() => setOnHoverNews(false)}>
                   <div className={navStyles.popup_block}>
                     <a className= {`${navStyles.popup_menu_item} ${navStyles.popup_menu}`} href="https://store.steampowered.com/search/?filter=topsellers&snr=1_5_9__12">Top Sellers</a>
                     <a className= {`${navStyles.popup_menu_item} ${navStyles.popup_menu}`} href="https://store.steampowered.com/explore/new/?snr=1_5_9__12">New & Trending</a>
