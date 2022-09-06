@@ -6,6 +6,7 @@ import Ratings from './Ratings'
 import Details from './Details'
 import rightColumnStyles from '../styles/RightColumn.module.css'
 
+
 export const RightColumn = () => {
 
 
