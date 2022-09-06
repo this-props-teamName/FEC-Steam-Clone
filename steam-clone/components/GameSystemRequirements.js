@@ -1,11 +1,11 @@
 import axios from 'axios'
 
 const GameSystemRequirements = () => {
-  axios.get('http://localhost:4000/api/min')
-    .then(res => console.log(res.data[0]));
+  // axios.get('http://localhost:4000/api/min')
+  //   .then(res => console.log(res.data[0]));
 
-  axios.get('http://localhost:4000/api/req')
-    .then(res => console.log(res.data[0]));
+  // axios.get('http://localhost:4000/api/req')
+  //   .then(res => console.log(res.data[0]));
 
   return (
     <>
@@ -114,7 +114,7 @@ const GameSystemRequirements = () => {
     <div className='relative text-[14px] text-[#acb2b8] font-sans'>
       <div className='max-h-max overflow-hidden text-[14px] text-[#acb2b8] font-sans'>
         <div className='text-[#566168] text-[11px] mb-[10px] mt-[20px] font-sans'>  
-          <p className='text-[#566168] text-[11px] font-sans leading-normal '>
+          <p className='text-[#566168] text-[11px] font-sans leading-none'>
           HOGWARTS LEGACY software © 2022 Warner Bros. Entertainment Inc. Developed by Avalanche Software. WIZARDING WORLD and HARRY POTTER Publishing Rights © J.K. Rowling. PORTKEY GAMES, HOGWARTS LEGACY, WIZARDING WORLD AND HARRY POTTER characters, names and related indicia © and ™ Warner Bros. Entertainment Inc.
           <br />
           <br />
