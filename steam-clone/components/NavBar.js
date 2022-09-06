@@ -39,7 +39,7 @@ const NavBar = () => {
                 </div>
 
 {/*Store Dropdown*/}
-                <div className = "invisible z-[200] absolute shadow-[0_0_12px_rgb(0,0,0)] top-[42px] left-[0px] block opacity-100">
+                <div className = "hidden z-[200] absolute shadow-[0_0_12px_rgb(0,0,0)] top-[42px] left-[0px] block opacity-100">
                   <div className = {navStyles.popup_block}>
                     <a className= {`${navStyles.popup_menu_item} ${navStyles.popup_menu}`} href="https://store.steampowered.com/?snr=1_5_9__12">Home</a>
                     <a className= {`${navStyles.popup_menu_item} ${navStyles.popup_menu}`} href="https://store.steampowered.com/communityrecommendations/?snr=1_5_9__12">Community Recommendations</a>
@@ -58,7 +58,7 @@ const NavBar = () => {
                 </div>
 
 {/* News and Noteworthy Dropdown */}
-                <div className="invisible top-[42px] left-[96.1125px] block opacity-100 z-[200] absolute shadow-[0_0_12px_rgb(0,0,0)]">
+                <div className="hidden top-[42px] left-[96.1125px] block opacity-100 z-[200] absolute shadow-[0_0_12px_rgb(0,0,0)]">
                   <div className={navStyles.popup_block}>
                     <a className= {`${navStyles.popup_menu_item} ${navStyles.popup_menu}`} href="https://store.steampowered.com/search/?filter=topsellers&snr=1_5_9__12">Top Sellers</a>
                     <a className= {`${navStyles.popup_menu_item} ${navStyles.popup_menu}`} href="https://store.steampowered.com/explore/new/?snr=1_5_9__12">New & Trending</a>
@@ -77,7 +77,7 @@ const NavBar = () => {
                 </div>
 
 {/* Categories Dropdown*/}
-                <div className= "invisible top-[42px] left-[0px] block opacity-100 z-[200] absolute shadow-[0_0_12px_rgb(0,0,0)]">
+                <div className= "hidden top-[42px] left-[0px] block opacity-100 z-[200] absolute shadow-[0_0_12px_rgb(0,0,0)]">
                   <div className= {`${navStyles.popup_body} ${navStyles.popup_block} ${navStyles.popup_menu_twocol_new}`}>
                     <div className= {navStyles.popup_menu_browse}>
                       <div className= {navStyles.popup_menu_mainheader}>Special Sections</div>

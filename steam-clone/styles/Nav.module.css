@@ -88,12 +88,12 @@
 }
 
 .search_link_img {
+    background-image: url(https://store.akamai.steamstatic.com/public/images/v6/search_icon_btn.png);
     width: 25px;
     height: 25px;
     position: absolute;
     top: 1px;
     right: -1px;
-    background-image: url(https://store.akamai.steamstatic.com/public/images/v6/search_icon_btn.png);
 }
 
 

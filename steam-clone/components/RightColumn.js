@@ -3,6 +3,7 @@ import GameRelevance from './GameRelevance'
 import GameFeatures from './GameFeatures'
 import SupportedLanguages from './SupportedLanguages'
 import Ratings from './Ratings'
+import EmbedRow from './EmbedRow'
 
 export const RightColumn = () => {
   return (
@@ -17,6 +18,7 @@ export const RightColumn = () => {
       <GameFeatures/>
       <SupportedLanguages/>
       <Ratings/>
+      <EmbedRow/>
     </div>
   )
 }
