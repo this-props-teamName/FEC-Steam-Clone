@@ -6,7 +6,6 @@ import Ratings from './Ratings'
 import Details from './Details'
 
 
-
 export const RightColumn = () => {
 
 
