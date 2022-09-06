@@ -3,7 +3,6 @@ import React from 'react'
 const GamePageAutoCollapseAbout = () => {
   return (
     <div className='relative' >
-      GamePageAutoCollapseAbout
       <div className='overflow-hidden ' >
         <div className='leading-[1.5rem] text-[14px] mt-[30px] overflow-hidden font-sans font-normal ' ></div>
           <h2 className='font-sans text-[14-x] uppercase text-[#fff] mb-[10px] tracking-[0.03em] font-normal pt-[2px]' >

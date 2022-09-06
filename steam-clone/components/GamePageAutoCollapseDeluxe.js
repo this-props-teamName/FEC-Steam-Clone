@@ -13,7 +13,6 @@ const GamePageAutoCollapseDeluxe = () => {
 
   return (
     <div className="pb-[20px] relative">
-      GamePageAutoCollapseDeluxe
       {/* If you take away the max-h-[300px] it will show the entire thing */}
       <div className={digiDeFullScreenClass()}>
         <div className="leading-[1.5rem] text-[14px] mt-[30px] overflow-hidden font-sans font-normal ">
@@ -29,7 +28,7 @@ const GamePageAutoCollapseDeluxe = () => {
           </p>
         </div>
         <div className="leading-[1.5rem] text-[14px] mt-[30px] overflow-hidden font-sans font-normal  ">
-          <h2 className='text-[14px] uppercase text-[#fff] mt-[0px] mx-[0px] mb-[10px] tracking-[0.03rem] font-normal pt-2pxleading-[26px] bg-[url("https://store.cloudflare.steamstatic.com/public/images/v6/maincol_gradient_rule.png")] bg-no-repeat bg-left-bottom  '>
+          <h2 className='text-[14px] uppercase text-[#fff] mt-[0px] mx-[0px] mb-[10px] tracking-[0.03rem] font-normal pt-2px leading-[26px] bg-[url("https://store.cloudflare.steamstatic.com/public/images/v6/maincol_gradient_rule.png")] bg-no-repeat bg-left-bottom  '>
             Digital Deluxe Edition
           </h2>
           <p className="mb-[8px] ">
