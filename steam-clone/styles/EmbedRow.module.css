@@ -65,6 +65,18 @@
     height: 16px;
 }
 
+/* Universal background */
+.background {
+    /* display: none; */
+    opacity: .8;
+    position: fixed;
+    z-index: 900;
+    background: #000000;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
 
 /* {sharedBox.js} */
 
@@ -191,3 +203,32 @@
     color: #dfe3e6;
     background: transparent;
 }
+
+.btn_grey_steamui:hover {
+    box-shadow: 0 0 40px rgba(0, 0, 0, 0.1); 
+}
+
+.btn_grey_steamui_span {
+    padding: 0 15px;
+    font-size: 15px;
+    line-height: 30px;
+    border-radius: 2px;
+    display: block;
+    background: linear-gradient( to right, #32363f 5%, #32363f 95%);
+    box-shadow: 2px 2px 5px rgb(0 0 0 / 20%);
+    transition: all 0.2s ease-out;
+}
+
+/* EmbedBtn */
+.embedModal {
+    position: fixed;
+    z-index: 1000;
+    max-width: 1442px;
+    left: 405px;
+    top: 102px;
+    font-family: "Motiva Sans", Sans-serif;
+    font-weight: normal;
+    min-width: 500px;
+    background: radial-gradient(circle at top left, rgba(74, 81, 92, 0.4) 0%, rgba(75, 81, 92, 0) 60%), #25282e;
+}
+
