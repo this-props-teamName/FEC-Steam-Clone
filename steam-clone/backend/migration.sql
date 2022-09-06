@@ -7,7 +7,6 @@ DROP TABLE IF EXISTS comments;
 DROP TABLE IF EXISTS logIn;
 
 
-
 CREATE TABLE game (
     id SERIAL PRIMARY KEY,
     game_id INTEGER UNIQUE
