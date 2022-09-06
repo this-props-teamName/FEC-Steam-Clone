@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react'
 import languageStyles from '../styles/SupportedLanguages.module.css'
+import languageGradient from '../styles/RightColumn.module.css'
 
 const SupportedLanguages = () => {
     const [display, setDisplay] = useState(false);
@@ -9,7 +10,7 @@ const SupportedLanguages = () => {
     }
 
   return (
-    <div className="bg-black-rgba p-[16px] mb-[8px] mt-0">
+    <div className={languageGradient.supportedLanguages}>
         <div className="text-[12px] text-[#8f98a0] mb-[2px]">
           Languages:
         </div>
