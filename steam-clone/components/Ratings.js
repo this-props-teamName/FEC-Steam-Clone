@@ -1,8 +1,9 @@
 import React from 'react'
+import ratingsStyles from '../styles/RightColumn.module.css'
 
 const Ratings = () => {
   return (
-    <div className="bg-black-rgba p-[16px] mb-[8px] mt-0 block">
+    <div className={ratingsStyles.ratings}>
         <div className="hidden">Ratings</div>
         <div className="text-[#c6d4df] text-[12px] block">
           <div className="flex">

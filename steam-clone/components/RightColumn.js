@@ -4,6 +4,7 @@ import GameFeatures from './GameFeatures'
 import SupportedLanguages from './SupportedLanguages'
 import Ratings from './Ratings'
 import Details from './Details'
+import rightColumnStyles from '../styles/RightColumn.module.css'
 
 
 
@@ -16,7 +17,7 @@ export const RightColumn = () => {
       RightColumn
       {/* responsive_apppage_details_left_ctn */}
       <div></div>
-      <div className="mb-0 bg-black-rgba text-[#fff] text-[16px] pt-[10px] pb-[10px] pl-[18px] pr-[18px]">Is this game relevant to you?</div>
+      <div className={rightColumnStyles.rightColumn}>Is this game relevant to you?</div>
       {/* following div is for if they are NOT logged in */}
       <GameRelevance/>
       <GameFeatures/>

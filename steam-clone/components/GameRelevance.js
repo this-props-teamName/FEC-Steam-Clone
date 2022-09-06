@@ -1,8 +1,9 @@
 import React from 'react'
+import gameRelevanceStyles from '../styles/RightColumn.module.css'
 
 const GameRelevance = () => {
   return (
-    <div className="text-[#acb2b8] text-[14px] leading-[22px] p-[16px] mb-[8px] mt-0 bg-black-rgba">
+    <div className={gameRelevanceStyles.gameRelevance}>
         <p>
             Sign in to see reasons why you may or may not like this based on your games, friends, and curators you follow.
         </p>
