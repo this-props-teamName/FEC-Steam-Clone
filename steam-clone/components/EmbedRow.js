@@ -5,7 +5,13 @@ import React, { useState } from "react"
 const EmbedRow = () => {
     const [shareBox, setShareBox] = useState(false);
     const [showEmbed, setEmbedBox] = useState(false);
+    const [showBase, setBaseBox] = useState(false)
+    const [showDeluxe, setDeluxeBox] = useState(false)
     const [showReport, setReportBox] = useState(false);
+    const [selectedRadioBtn, setSelectedRadioBtn] = useState('radio1');
+
+    const isRadioSelected = (value) => selectedRadioBtn === value;
+    const handleRadioClick = (event) => setSelectedRadioBtn(event.target.value);
 
 
     return (
@@ -31,7 +37,7 @@ const EmbedRow = () => {
             </a>
             </div>
 
-{/* {modal for share button} */}
+{/* {Modal for share button} */}
             {shareBox ? (
                         <div className = {shareStyles.newModal}>
                         <div className = {shareStyles.top_bar}></div>
@@ -78,6 +84,7 @@ const EmbedRow = () => {
                     </div>
             ) : null}
 
+{/* Modal for the Embed Btn*/}
             {showEmbed ? (
                 <div className = {shareStyles.embedModal}>
                     <div className = {shareStyles.top_bar}></div>
@@ -97,11 +104,21 @@ const EmbedRow = () => {
                                 <p className = {shareStyles.paragraph2}> There is more than one way to buy this game. Please select a specific package to create a widget for: </p>
                                 <div className = {shareStyles.w_options}>
                                     <div className = {shareStyles.w_option}>
-                                        <input type= "radio"/>
+                                        <input 
+                                        type= "radio"
+                                        value= 'radio1'
+                                        checked= {isRadioSelected('radio1')}
+                                        onChange= {handleRadioClick}                                      
+                                        />
                                         <label> Hogwarts Legacy </label>
                                     </div>
                                     <div className = {shareStyles.w_option}>
-                                        <input type= "radio"/>
+                                        <input 
+                                        type= "radio"
+                                        value= 'radio2'
+                                        checked= {isRadioSelected('radio2')}
+                                        onChange= {handleRadioClick}  
+                                        />
                                         <label> Hogwarts Legacy Deluxe Edition </label>
                                     </div>
                                 </div>
@@ -111,7 +128,12 @@ const EmbedRow = () => {
                                 </div>
                                 <div className = {shareStyles.btn_container}>
                                     <a 
-                                    onClick={() => setEmbedBox(false)}
+                                    onClick= 
+                                    {() => {
+                                        setBaseBox(true);
+                                        console.log('click')
+                                    }}
+                                    
                                     className = {shareStyles.btn_blue}>
                                         <span className = {shareStyles.btn_medium}>Create widget</span>
                                     </a>
@@ -122,6 +144,13 @@ const EmbedRow = () => {
                     </div>
                 </div>
             ) : null}
+
+{/* Modal for the Create Widget*/}
+            {showBase ? (
+                <div className = {shareStyles.createModal}>
+
+                </div>
+            ): null}
         </div>
         
     )
