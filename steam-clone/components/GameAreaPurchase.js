@@ -1,20 +1,11 @@
 import styles from '../styles/PurchaseGame.module.css'
-import React, {useState, useEffect} from 'react'; 
-import axios from 'axios';
 
 export const GameAreaPurchase = () => {
   /* padding(top, right, bottom, left) */
-  const [gameInfo, setGameInfo] = useState([])
 
-  console.log(gameInfo, "this is gameInfo")
-  useEffect(() => {
-    axios
-      .get("http://localhost:4000/api/gameInfo")
-      .then((res) => setGameInfo(res.data[0]))
 
-  }, [])
 
-  if (gameInfo) {
+
     return (
       <div className="text-[14px] mt-[16px]">
         <div className=" text-[#d5d6d8] mb-[28px] shadow-[2px_2px_15px_rgba(0,0,0,0.4)] rounded-[4px] text-[13px] font-sans font-[300] ">
@@ -41,7 +32,7 @@ export const GameAreaPurchase = () => {
             <div className="absolute right-[16px] bottom-[-17px] left-[16px] whitespace-nowrap text-right ">
               <div className="h-[32px] inline-block align-bottom bg-[#000000] p-[2px] rounded-[2px] whitespace-nowrap text-0">
                 <div className="bg-[#000000] text-[13px] pl-[12px] pr-[12px] height-[24px] relative inline-block align-middle ml-[2px] ">
-                  {gameInfo.prepur_offer}
+                  ADDMONeYHERE
                 </div>
                 <div className=" relative inline-block text-[12px] align-middle ml-[2px]">
                   <a className="rounded-[2px] border-none inline-block cursor-pointer no-underline text-[#d2efa9] shadow-[1px_1px_0px_rgba(0,0,0,0.3)] ">
@@ -83,7 +74,7 @@ export const GameAreaPurchase = () => {
         </div>
       </div>
     )
-  }
+
 }
 
 export default GameAreaPurchase
