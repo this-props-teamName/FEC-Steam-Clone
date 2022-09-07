@@ -5,9 +5,9 @@ import { useRecoilState, useRecoilValue } from "recoil"
 export const GameAreaPurchase = () => {
   /* padding(top, right, bottom, left) */ 
 const [gamesInfo, setGamesInfo] = useRecoilState(gamesState); 
-console.log(gamesInfo)
+
 const [carouselInfo, setCarouselInfo] = useRecoilState(carouselState); 
-console.log(carouselInfo); 
+
 
 let currDate = new Date(); 
 let reDate = new Date(carouselInfo.release_date); 

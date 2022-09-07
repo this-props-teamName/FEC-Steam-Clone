@@ -8,7 +8,7 @@ const GamePageAutoCollapseDeluxe = () => {
   const [gamesInfo, setGamesInfo] = useRecoilState(gamesState); 
   const [carouselInfo, setCarouselInfo] = useRecoilState(carouselState);
   const [readMoreClick, setReadMoreClick] = useState(false); 
-console.log(gamesInfo, 'here')
+
 
   const digiDeFullScreenClass = () => {
       return `${readMoreClick ? '' : 'max-h-[300px] overflow-hidden'}`

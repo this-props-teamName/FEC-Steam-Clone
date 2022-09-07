@@ -14,6 +14,7 @@ const LeftColumn = () => {
         {/* bannerCommunity */}
         {/* put the spacer div */}
         {/* script tag */}
+        <div>&nbsp;</div>
         <GameEvents/>
         {/* GamePageAutoCollapse Contains deluxe edition details collapsed */}
         <GamePageAutoCollapseDeluxe/>
