@@ -1,6 +1,13 @@
 import React from 'react'
+import { useRecoilState } from "recoil"
+import GameInfo from './GameInfo'
+import { gamesState } from "./state"
 
 const GamePageAutoCollapseAbout = () => {
+
+  const [gamesInfo, setGamesInfo] = useRecoilState(gamesState)
+  console.log(gamesInfo.about)
+
   return (
     <div className='relative' >
       <div className='overflow-hidden ' >
@@ -9,7 +16,8 @@ const GamePageAutoCollapseAbout = () => {
             About This Game
             <img className='leading-[26px] bg-no-repeat bg-left-bottom ' src='https://store.cloudflare.steamstatic.com/public/images/v6/maincol_gradient_rule.png'/>
           </h2>
-         Hogwarts Legacy is an open-world action RPG set in the world first introduced in the Harry Potter books. Embark on a journey through familiar and new locations as you explore and discover magical beasts, customize your character and craft potions, master spell casting, upgrade talents and become the wizard you want to be. <br/> <br/>
+          Hogwarts Legacy is an open-world action RPG set in the world first introduced in the Harry Potter books. Embark on a journey through familiar and new locations as you explore and discover magical beasts, customize your character and craft potions, master spell casting, upgrade talents and become the wizard you want to be.Experience Hogwarts in the 1800s. Your character is a student who holds the key to an ancient secret that threatens to tear the wizarding world apart. Make allies, battle Dark wizards, and ultimately decide the fate of the wizarding world. Your legacy is what you make of it. Live the Unwritten.
+          <br/> <br/> 
           Experience Hogwarts in the 1800s. Your character is a student who holds the key to an ancient secret that threatens to tear the wizarding world apart. Make allies, battle Dark wizards, and ultimately decide the fate of the wizarding world. Your legacy is what you make of it. Live the Unwritten.
         </div>
     </div>
