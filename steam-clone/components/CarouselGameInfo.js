@@ -1,6 +1,7 @@
 import { carouselState } from './state'
 import  { useRecoilState } from 'recoil'
 
+
 const CarouselGameInfo = () => {
   const [carouselInfo, setCarouselInfo] = useRecoilState(carouselState);
   
@@ -56,7 +57,6 @@ const CarouselGameInfo = () => {
               <a href='https://store.steampowered.com/tags/en/Adventure/?snr=1_5_9__409' className='leading-[19px] px-[7px] py-[0px] bg-[#67c1f533] max-w-[200px] mb-[3px] text-[#67c1f5] cursor-pointer rounded-[2px] mr-[2px] shadow-none truncate hover:bg-[#67c1f5] inline-block hover:text-[#fff]'> {carouselInfo.tags[3]} </a>
               <a href='https://store.steampowered.com/tags/en/RPG/?snr=1_5_9__409' className='leading-[19px] px-[7px] py-[0px] bg-[#67c1f533] max-w-[200px] mb-[3px] text-[#67c1f5] cursor-pointer rounded-[2px] mr-[2px] shadow-none truncate hover:bg-[#67c1f5] inline-block hover:text-[#fff]'> {carouselInfo.tags[4]} </a>
               <a href='/' className='leading-[19px] px-[7px] py-[0px] bg-[#67c1f533] max-w-[200px] mb-[3px] text-[#67c1f5] cursor-pointer rounded-[2px] mr-[2px] shadow-none truncate inline-block hover:bg-[#67c1f5] hover:text-[#fff]'> + </a>
-
             </div>
           </div>
         </div>

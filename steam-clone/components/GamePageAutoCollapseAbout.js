@@ -1,11 +1,11 @@
 import React from 'react'
-import { gamesState } from './state.js'
-import  { useRecoilState } from 'recoil'
+import { gamesState } from './state'
+import { useRecoilState } from 'recoil'
 
 const GamePageAutoCollapseAbout = () => {
-  const [gamesInfo, setGamesInfo] = useRecoilState(gamesState)
+  const [gamesInfo, setGamesInfo] = useRecoilState(gamesState);
 
-  if(gamesInfo.about){
+  if (gamesInfo.about) {
     return (
       <div className='relative' >
         <div className='overflow-hidden ' >
@@ -14,8 +14,8 @@ const GamePageAutoCollapseAbout = () => {
               About This Game
               <img className='leading-[26px] bg-no-repeat bg-left-bottom ' src='https://store.cloudflare.steamstatic.com/public/images/v6/maincol_gradient_rule.png'/>
             </h2>
-              {gamesInfo.about[0]} <br/> <br/>
-              {gamesInfo.about[1]}
+            {gamesInfo.about[0]} <br/> <br/>
+            {gamesInfo.about[1]}
           </div>
       </div>
     )

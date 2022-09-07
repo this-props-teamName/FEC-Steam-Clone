@@ -1,15 +1,18 @@
-import axios from 'axios'
+import { systemMinState, systemReqState } from './state';
+import { useRecoilState } from 'recoil'
 
 const GameSystemRequirements = () => {
-  // axios.get('http://localhost:4000/api/min')
-  //   .then(res => console.log(res.data[0]));
 
-  // axios.get('http://localhost:4000/api/req')
-  //   .then(res => console.log(res.data[0]));
+  const [systemMinInfo, setSystemMinInfo] = useRecoilState(systemMinState)
+  const [systemReqInfo, setSystemReqInfo] = useRecoilState(systemReqState)
 
+  console.log(systemMinInfo.copy_write)
+  
+
+  if(systemMinInfo.copy_write) {
   return (
     <>
-    <div className='relative text-[14px] text-[#acb2b8]'>GameSystemRequirements
+    <div className='relative text-[14px] text-[#acb2b8]'>
       <div className='mt-[30px] overflow-hidden max-h-max font-sans'>
         <h2 className='text-[14px] uppercase text-[#fff] pt-[2px] tracking-[0.03em] leading-[26px] bg-[url("https://store.cloudflare.steamstatic.com/public/images/v6/maincol_gradient_rule.png")] bg-no-repeat bg-left-bottom'>System Requirements</h2>
         <div className='mt-[10px] text-[14px] text-[#acb2b8] font-sans'>
@@ -21,36 +24,36 @@ const GameSystemRequirements = () => {
                 <br />
                 <ul className='list-none ml-0 leading-[18px] list-inside text-[12px] font-serif text-[#acb2b8]'>
                   <li className='my-[2px] mx-0 list-outside list-none leading-[18px] text-[12px] text-[#acb2b8] font-serif'>
-                    Requires a 64-bit processor and operating system
+                    {systemMinInfo.min_required_info}
                     <br />
                   </li>
                   <li className='my-[2px] mx-0 list-outside leading-[18px] list-none capitalize text-[12px] font-serif text-[#acb2b8]'>
                     <strong className='text-[#61686D] text-[12px] mr-[4px] font-normal mb-[2px] uppercase font-sans inline-block list-none leading-[18px]'>OS:</strong>
-                    Windows 10
+                    {systemMinInfo.os}
                   </li>
                   <li className='my-[2px] mx-0 list-outside leading-[18px] list-none capitalize text-[12px] font-serif text-[#acb2b8]'>
                     <strong className='text-[#61686D] text-[12px] mr-[4px] font-normal mb-[2px] capitalize font-sans inline-block list-none leading-[18px]'>Processor:</strong>
-                    Intel Core i5-8400 OR AMD Ryzen 5 2600
+                  {systemMinInfo.processor}
                   </li>
                   <li className='my-[2px] mx-0 list-outside leading-[18px] list-none capitalize text-[12px] font-serif text-[#acb2b8]'>
                     <strong className='text-[#61686D] text-[12px] mr-[4px] font-normal mb-[2px] capitalize font-sans inline-block list-none leading-[18px]'>Memory:</strong>
-                    8 GB RAM
+                    {systemMinInfo.memory}
                   </li>
                   <li className='my-[2px] mx-0 list-outside leading-[18px] list-none capitalize text-[12px] font-serif text-[#acb2b8]'>
                     <strong className='text-[#61686D] text-[12px] mr-[4px] font-normal mb-[2px] capitalize font-sans inline-block list-none leading-[18px]'>Graphics:</strong>
-                    NVIDIA GeForce GTX 1070 or AMD RX Vega 56
+                    {systemMinInfo.graphics}
                   </li>
                   <li className='my-[2px] mx-0 list-outside leading-[18px] list-none capitalize text-[12px] font-serif text-[#acb2b8]'>
                     <strong className='text-[#61686D] text-[12px] mr-[4px] font-normal mb-[2px] capitalize font-sans inline-block list-none leading-[18px]'>DirectX:</strong>
-                    Version 12
+                    {systemMinInfo.directX}
                   </li>
                   <li className='my-[2px] mx-0 list-outside leading-[18px] list-none capitalize text-[12px] font-serif text-[#acb2b8]'>
                     <strong className='text-[#61686D] text-[12px] mr-[4px] font-normal mb-[2px] capitalize font-sans inline-block list-none leading-[18px]'>Storage:</strong>
-                    85 GB available space
+                    {systemMinInfo.storage}
                   </li>
                   <li className='my-[2px] mx-0 list-outside leading-[18px] list-none capitalize text-[12px] font-serif text-[#acb2b8]'>
                     <strong className='text-[#61686D] text-[12px] mr-[4px] font-normal mb-[2px] capitalize font-sans inline-block list-none leading-[18px]'>Additional Notes:</strong>
-                    SDD(Preferred), HDD (Supported), 1080p/60 fps, Low Quality Settings, Upscale Performance Setting
+                    {systemMinInfo.additional_notes}
                   </li>
                 </ul>
               </ul>
@@ -62,42 +65,42 @@ const GameSystemRequirements = () => {
                 <br />
                 <ul className='list-none ml-0 leading-[18px] list-inside text-[12px] font-serif text-[#acb2b8]'>
                   <li className='my-[2px] mx-0 list-outside list-none leading-[18px] '>
-                    Requires a 64-bit processor and operating system
+                    {systemReqInfo.required_info}
                     <br />
                   </li>
                   <li className='my-[2px] mx-0 list-outside list-none leading-[18px] text-[12px] font-normal font-serif text-[#acb2b8]'>
                     <strong className='text-[#61686D] text-[12px] mr-[4px] font-normal mb-[2px] uppercase font-sans inline-block list-none leading-[18px]'>OS:</strong>
-                    Windows 10
+                    {systemReqInfo.os}
                     <br />
                   </li>
                   <li className='my-[2px] mx-0 list-outside list-none leading-[18px] text-[12px] font-normal font-serif text-[#acb2b8]'>
                     <strong className='text-[#61686D] text-[12px] mr-[4px] font-normal mb-[2px] capitalize font-sans inline-block list-none leading-[18px]'>Processor:</strong>
-                    Intel Core i7-8700 OR AMD Ryzen 5 <br/>3600
+                    {systemReqInfo.processor}
                     <br />
                   </li>
                   <li className='my-[2px] mx-0 list-outside list-none leading-[18px] text-[12px] font-normal font-serif text-[#acb2b8]'>
                     <strong className='text-[#61686D] text-[12px] mr-[4px] font-normal mb-[2px] capitalize font-sans inline-block list-none leading-[18px]'>Memory:</strong>
-                    16 GB RAM
+                    {systemReqInfo.memory}
                     <br />
                   </li>
                   <li className='my-[2px] mx-0 list-outside list-none leading-[18px] text-[12px] font-normal font-serif text-[#acb2b8]'>
                     <strong className='text-[#61686D] text-[12px] mr-[4px] font-normal mb-[2px] capitalize font-sans inline-block list-none leading-[18px]'>Graphics:</strong>
-                    NVIDIA GeForce 1080 Ti or AMD RX 5700 XT
+                    {systemReqInfo.graphics}
                     <br />
                   </li>
                   <li className='my-[2px] mx-0 list-outside list-none leading-[18px] text-[12px] font-normal font-serif text-[#acb2b8]'>
                     <strong className='text-[#61686D] text-[12px] mr-[4px] font-normal mb-[2px] capitalize font-sans inline-block list-none leading-[18px]'>DirectX:</strong>
-                    Version 12
+                    {systemReqInfo.directX}
                     <br />
                   </li>
                   <li className='my-[2px] mx-0 list-outside list-none leading-[18px] text-[12px] font-normal font-serif text-[#acb2b8]'>
                     <strong className='text-[#61686D] text-[12px] mr-[4px] font-normal mb-[2px] capitalize font-sans inline-block list-none leading-[18px]'>Storage:</strong>
-                    85 GB available space
+                    {systemReqInfo.storage}
                     <br />
                   </li>
                   <li className='my-[2px] mx-0 list-outside list-none leading-[18px] text-[12px] font-normal font-serif text-[#acb2b8]'>
                     <strong className='text-[#61686D] text-[12px] mr-[4px] font-normal mb-[2px] capitalize font-sans inline-block list-none leading-[18px]'>Additional Notes:</strong>
-                    SSD, 1080p/60 fps, High Quality Settings, Upscale Quality Setting
+                    {systemReqInfo.additional_notes}
                     <br />
                   </li>
                 </ul>
@@ -115,16 +118,17 @@ const GameSystemRequirements = () => {
       <div className='max-h-max overflow-hidden text-[14px] text-[#acb2b8] font-sans'>
         <div className='text-[#566168] text-[11px] mb-[10px] mt-[20px] font-sans'>  
           <p className='text-[#566168] text-[11px] font-sans leading-none'>
-          HOGWARTS LEGACY software © 2022 Warner Bros. Entertainment Inc. Developed by Avalanche Software. WIZARDING WORLD and HARRY POTTER Publishing Rights © J.K. Rowling. PORTKEY GAMES, HOGWARTS LEGACY, WIZARDING WORLD AND HARRY POTTER characters, names and related indicia © and ™ Warner Bros. Entertainment Inc.
+          {systemMinInfo.copy_write[0]}
           <br />
           <br />
-          WARNER BROS. GAMES LOGO, WB SHIELD: ™ & © Warner Bros. Entertainment Inc. (s22)
+         {systemMinInfo.copy_write[1]}
           </p>
         </div>
       </div>
     </div>
     </>
   )
+  }
 }
 
 export default GameSystemRequirements
