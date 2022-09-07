@@ -67,7 +67,7 @@ const EmbedRow = () => {
                                                 <img src = "https://store.akamai.steamstatic.com/public/images/social/reddit_large.png" className = {shareStyles.share_img}/>
                                             </a>
                                             <div className= {shareStyles.share_dialog}>
-                                                <label for= "linkShareValue" hidden>Link to the game's store page</label>
+                                                <label htmlFor= "linkShareValue" hidden> {"Link to the game's store page"}</label>
                                                 <textarea className= {shareStyles.share_dialog_value}>https://store.steampowered.com/app/990080/Hogwarts_Legacy/</textarea>
                                             </div>
                                             <div className= {shareStyles.share_dialog_results}></div>
@@ -113,7 +113,7 @@ const EmbedRow = () => {
                                         id="wp__326241"
                                         value= '326241'                                   
                                         />
-                                        <label for= "wp_326241"> Hogwarts Legacy </label>
+                                        <label htmlFor= "wp_326241"> Hogwarts Legacy </label>
                                     </div>
                                     <div className = {shareStyles.w_option}>
                                         <input 
@@ -184,9 +184,9 @@ const EmbedRow = () => {
                                                             />
                                                             </div>
                                                             <div className= {shareStyles.app_report_dialog_option_text}>
-                                                                <label for="report_type_2">
+                                                                <label htmlFor="report_type_2">
                                                                     Harmful - 
-                                                                    <span className= {shareStyles.sub}> This software modifies a customer's computer in unexpected or harmful ways (e.g. is malware or a virus)</span>
+                                                                    <span className= {shareStyles.sub}> { "This software modifies a customer's computer in unexpected or harmful ways (e.g. is malware or a virus)" } </span>
                                                                 </label>
                                                             </div>
                                                     </div>
@@ -201,7 +201,7 @@ const EmbedRow = () => {
                                                             />
                                                             </div>
                                                             <div className= {shareStyles.app_report_dialog_option_text}>
-                                                                <label for="report_type_6">
+                                                                <label htmlFor="report_type_6">
                                                                     Defamatory - 
                                                                     <span className= {shareStyles.sub}> Contains Libelous or defamatory statements</span>
                                                                 </label>
@@ -218,7 +218,7 @@ const EmbedRow = () => {
                                                             />
                                                             </div>
                                                             <div className= {shareStyles.app_report_dialog_option_text}>
-                                                                <label for="report_type_1">
+                                                                <label htmlFor="report_type_1">
                                                                     Fraud -  
                                                                     <span className= {shareStyles.sub}> This software fraudulently attempts to gather sensitive information, such as your Steam credentials or financial data (e.g. credit card information).</span>
                                                                 </label>
@@ -235,7 +235,7 @@ const EmbedRow = () => {
                                                             />
                                                             </div>
                                                             <div className= {shareStyles.app_report_dialog_option_text}>
-                                                                <label for="report_type_11">
+                                                                <label htmlFor="report_type_11">
                                                                     Legal Violation - 
                                                                     <span className= {shareStyles.sub}> Contains content that violates the laws in your jurisdiction.</span>
                                                                 </label>
@@ -252,9 +252,9 @@ const EmbedRow = () => {
                                                             />
                                                             </div>
                                                             <div className= {shareStyles.app_report_dialog_option_text}>
-                                                                <label for="report_type_5">
+                                                                <label htmlFor="report_type_5">
                                                                     Adult Content - 
-                                                                    <span className= {shareStyles.sub}> Contains adult content that isn't appropriately labeled and age-gated</span>
+                                                                    <span className= {shareStyles.sub}> {"Contains adult content that isn't appropriately labeled and age-gated"}</span>
                                                                 </label>
                                                             </div>
                                                     </div>
@@ -269,7 +269,7 @@ const EmbedRow = () => {
                                                             />
                                                             </div>
                                                             <div className= {shareStyles.app_report_dialog_option_text}>
-                                                                <label for="report_type_8">
+                                                                <label htmlFor="report_type_8">
                                                                     Child Exploitation - 
                                                                     <span className= {shareStyles.sub}> Contains content that exploits children in any way</span>
                                                                 </label>
@@ -286,7 +286,7 @@ const EmbedRow = () => {
                                                             />
                                                             </div>
                                                             <div className= {shareStyles.app_report_dialog_option_text}>
-                                                                <label for="report_type_13">
+                                                                <label htmlFor="report_type_13">
                                                                     Broken -  
                                                                     <span className= {shareStyles.sub}> Does not download, launch, or run correctly, even on a machine that meets the minimum system requirements.</span>
                                                                 </label>
@@ -297,7 +297,7 @@ const EmbedRow = () => {
                                                     </div>
                                                     <textarea className= {shareStyles.app_report_dialog_reason}></textarea>
                                                     <div classNaem= {shareStyles.app_report_dialog_dmca}>
-                                                    If you'd like to report Copyright Infringement and are the copyright holder, please proceed to our DMCA compliant notice of copyright infringement form 
+                                                    {"If you'd like to report Copyright Infringement and are the copyright holder, please proceed to our DMCA compliant notice of copyright infringement form"} 
                                                         <a className= {shareStyles.here} href="https://steamcommunity.com/dmca/create/"> here</a>
                                                         .
                                                     </div>
