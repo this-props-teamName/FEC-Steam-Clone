@@ -9,7 +9,7 @@ const GameSystemRequirements = () => {
 
   return (
     <>
-    <div className='relative text-[14px] text-[#acb2b8]'>GameSystemRequirements
+    <div className='relative text-[14px] text-[#acb2b8]'>
       <div className='mt-[30px] overflow-hidden max-h-max font-sans'>
         <h2 className='text-[14px] uppercase text-[#fff] pt-[2px] tracking-[0.03em] leading-[26px] bg-[url("https://store.cloudflare.steamstatic.com/public/images/v6/maincol_gradient_rule.png")] bg-no-repeat bg-left-bottom'>System Requirements</h2>
         <div className='mt-[10px] text-[14px] text-[#acb2b8] font-sans'>
