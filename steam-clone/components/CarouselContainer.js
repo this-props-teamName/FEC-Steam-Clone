@@ -1,4 +1,3 @@
-import Link from 'next/link'
 import CarouselGameInfo from './CarouselGameInfo'
 import CarouselImages from './CarouselImages'
 import carouselStyles from '../styles/Carousel.module.css'
