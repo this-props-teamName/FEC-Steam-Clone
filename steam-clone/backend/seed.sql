@@ -20,8 +20,8 @@ INSERT INTO carousel (title_img_url, large_img_url, small_img_url, carousel_game
     'Avalanche Software', 
     'Warner Bros. Games', 
     'Feb 10, 2023', 
-    '{"Adventure", "Magic", "Open World", "Fantasy", "RPG"}', 
-    'Hogwarts Legacy',
+    '{"Adventure", "Magic", "Open World", "Fantasy", "RPG", "Action", "Singleplayer", "Action-Adventure", "Action RPG", "Character Customization", "Third Person", "Story Rich", "Exploration", "Atmospheric", "Villain Protagonist", "Puzzle", "Combat", "Choices Matter", "Psychological Horror", "Souls-like"}', 
+    '{"Hogwarts Legacy", "Adventure Games"}',
     'Hogwarts Legacy Deluxe Edition',
     '{"Action", "Adventure", "RPG"}',
     1);
@@ -48,3 +48,9 @@ INSERT INTO req (required_info, os, processor, memory, graphics, directX, storag
     '85 GB available space',
     'SSD, 1080p/60 fps, High Quality Settings, Upscale Quality Setting',
     1);
+
+    INSERT INTO news (hoverText, mainText, images) VALUES (
+        '{"Take a tour of the Slytherin common room, located deep within the dungeons of Hogwarts Castle.", "Welcome to Hufflepuff Common Room, where cozy natural sunlight and an array of plants await."}',
+        '{"Tour the Slytherin Common Room", "Tour the Hufflepuff Common Room", ""Sat, September 3, 2022""}',
+        '{"https://cdn.akamai.steamstatic.com/steamcommunity/public/images/clans/42155078/6e9647679e2a01001e1a61da7b7373bc086350f6_400x225.jpg", "https://cdn.akamai.steamstatic.com/steamcommunity/public/images/clans/42155078/db8eef3034e5b0fb77b5528ee7eafa812ff830f0_400x225.jpg"}'
+    );

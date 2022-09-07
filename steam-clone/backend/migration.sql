@@ -5,6 +5,7 @@ DROP TABLE IF EXISTS min;
 DROP TABLE IF EXISTS req;
 DROP TABLE IF EXISTS comments;
 DROP TABLE IF EXISTS logIn;
+DROP TABLE IF EXISTS news;
 
 
 CREATE TABLE game (
@@ -83,4 +84,11 @@ CREATE TABLE comments (
 CREATE TABLE logIn (
     id SERIAL,
     username TEXT
+);
+
+CREATE TABLE news (
+    id SERIAL,
+    hoverText TEXT,
+    mainText TEXT,
+    images TEXT
 );
