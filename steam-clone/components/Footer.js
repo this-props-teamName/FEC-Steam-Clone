@@ -57,7 +57,7 @@ const Footer = () => {
               <a className="text-[#C6D4DF] hover:text-[#fff]" href="https://store.steampowered.com/digitalgiftcards/?snr=1_44_44_" target="_blank" rel="noreferrer">Gift Cards</a>
               &nbsp; | &nbsp;
               {/* slight differences but we can fix it later */}
-                <a className="text-[#C6D4DF] flex flex-nowrap" href="https://steamcommunity.com/linkfilter/?url=http://www.facebook.com/Steam" target="_blank" rel="noopener">
+                <a className="text-[#C6D4DF] flex flex-nowrap" href="https://steamcommunity.com/linkfilter/?url=http://www.facebook.com/Steam" target="_blank" rel="noreferrer">
                   <img className="align-bottom border-none m-0 p-0 h-[16px] w-[16px]" src="https://store.akamai.steamstatic.com/public/images/ico/ico_facebook.gif" />
                    Steam
                 </a>

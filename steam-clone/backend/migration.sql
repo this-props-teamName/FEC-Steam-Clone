@@ -5,6 +5,7 @@ DROP TABLE IF EXISTS min;
 DROP TABLE IF EXISTS req;
 DROP TABLE IF EXISTS comments;
 DROP TABLE IF EXISTS logIn;
+DROP TABLE IF EXISTS news;
 
 
 CREATE TABLE game (
@@ -31,6 +32,7 @@ CREATE TABLE carousel (
     title_img_url TEXT,
     large_img_url TEXT[],
     small_img_url TEXT[],
+    huge_img_url TEXT[],
     carousel_game_info TEXT,
     developer TEXT,
     publisher TEXT,
@@ -83,4 +85,12 @@ CREATE TABLE comments (
 CREATE TABLE logIn (
     id SERIAL,
     username TEXT
+);
+
+CREATE TABLE news (
+    id SERIAL,
+    hoverText TEXT[],
+    mainText TEXT[],
+    images TEXT[],
+    game_id INTEGER REFERENCES game(id)
 );

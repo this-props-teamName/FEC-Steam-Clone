@@ -1,9 +1,22 @@
 import { carouselState } from './state'
-import  { useRecoilState } from 'recoil'
+import { useRecoilState } from 'recoil'
+import { arrow } from '../styles/Carousel.module.css'
+import { useState } from 'react'
+
 
 const CarouselImages = () => {
   const [carouselInfo, setCarouselInfo] = useRecoilState(carouselState);
+  const [frame, setFrame] = useState(0)
 
+  setInterval((frame) => {
+    if(frame < 480){
+      setFrame(frame + 120)
+    }else{
+      setFrame(0)
+    }
+  },3000)
+
+  
   if(carouselInfo.large_img_url){
   return (
       <div className="w-[616] float-left p-[0px] m-[0px] font-sans">
@@ -52,19 +65,10 @@ const CarouselImages = () => {
           </div>
           <div className="mt-[4px] relative h-[69px] mb-[4px] z-40">
             <div className="w-[602px] left-0 absolute">
-              {/* This is the white border div that shows what picture the main viewer is on in the carousel
-                create arrow. might need to put arrow and border into same div. 
-                  position: absolute;
-                  width: 0px;
-                  height: 0px;
-                  top: -8px;
-                  left: 46px;
-                  border: 12px solid white;
-                  border-top: 0;
-                  border-left-color: transparent;
-                  border-right-color: transparent;*/}
-              <div></div>
-              <div className="absolute w-[116px] h-[72px] z-50 top-[-3px] border-[3px] border-[#fff]"></div>
+              {/* frame of mini picutres */}
+              <div className={`absolute w-[116px]l-[${frame}px] h-[72px] z-50 top-[-3px] border-[3px] border-[#fff]`}>
+                <div className={arrow}></div>
+              </div>
               {/* small images below the main viewer of the carousel */}
               <div className="h-[65px] w-[116px] cursor-pointer text-center m-[2px] bg-black relative float-left">
                 <img src={carouselInfo.small_img_url[0]}/>
