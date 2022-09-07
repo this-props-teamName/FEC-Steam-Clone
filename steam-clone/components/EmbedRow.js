@@ -64,7 +64,7 @@ const EmbedRow = () => {
                                                 <img src = "https://store.akamai.steamstatic.com/public/images/social/reddit_large.png" className = {shareStyles.share_img}/>
                                             </a>
                                             <div className= {shareStyles.share_dialog}>
-                                                <label>Link to the game's store page</label>
+                                                <label>{"Link to the game's store page"}</label>
                                                 <textarea className= {shareStyles.share_dialog_value}>https://store.steampowered.com/app/990080/Hogwarts_Legacy/</textarea>
                                             </div>
                                             <div className= {shareStyles.share_dialog_results}></div>

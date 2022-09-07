@@ -39,7 +39,7 @@ const GameEvents = () => {
             <div className={Backing.right}>
               <div className={Backing.rightInner}>News</div>
               <div className={Backing.rightInner2}>
-                "Welcome to Hufflepuff Common Room, where cozy natural sunlight and an array of plants await."
+                Welcome to Hufflepuff Common Room, where cozy natural sunlight and an array of plants await.
                 </div>
             </div>
             <div className='w-full h-full bg-cover absolute opactiy-40'></div>
@@ -52,7 +52,7 @@ const GameEvents = () => {
                   Tour the Hufflepuff Common Room
                 </div>
                 <span className='inline-flex whitespace-nowrap'>
-                  "Sat, September 3, 2022"
+                  Sat, September 3, 2022
                 </span>
               </div>
             </div>
