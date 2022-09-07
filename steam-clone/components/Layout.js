@@ -18,19 +18,19 @@ const [systemReqInfo, setSystemReqInfo] = useRecoilState(systemReqState)
 
 
 useEffect(() => {
-  axios.get('http://localhost:4000/api/carousel')
+  axios.get('/api/carousel')
     .then(res => setCarouselInfo(res.data[0]));
 
-  axios.get('http://localhost:4000/api/gameInfo')
+  axios.get('/api/gameInfo')
     .then(res =>  setGamesInfo(res.data[0]));
 
-  axios.get('http://localhost:4000/api/min')
+  axios.get('/api/min')
     .then(res => setSystemMinInfo(res.data[0]));
 
-  axios.get('http://localhost:4000/api/req')
+  axios.get('/api/req')
     .then(res => setSystemReqInfo(res.data[0]));
 
-  axios.get('http://localhost:4000/api/comments')
+  axios.get('/api/comments')
     .then(res => setCommentsInfo(res.data[0]));
 }, [])
 
