@@ -72,6 +72,12 @@
     cursor: text
 }
 
+.searchbar:hover {
+    background-image: none;
+    border: 1px solid #4c9acc;
+    box-shadow: 1px 1px 0px rgb(255 255 255 / 0%)
+}
+
 .searchbox {
     color: #0e1c25;
     font-size: 14px;
@@ -86,6 +92,17 @@
     width: calc( 100% - 25px - 8px );
     outline: none;
     line-height: 26px;
+}
+
+.search_link {
+    position: absolute;
+    right: 2px;
+    top: 0;
+}
+
+.search_link:hover {
+    text-decoration: none;
+    color: #66c0f4;
 }
 
 .search_link_img {
@@ -134,7 +151,12 @@
 }
 
 .popup_menu_item:hover {
-    color:white;
+    background-color: #212d3d00;
+    color: #fff;
+    border-bottom: 2px solid #ffffffff;
+    transition-property: border, color;
+    transition-duration: 0.15s;
+    transition-timing-function: ease-in-out;
 }
 
 .popup_body {
@@ -200,7 +222,6 @@
 }
 
 .popup_menu_items {
-    border-bottom: 2px solid #ffffff00;
     padding: 3px 1px;
     margin: 0px 10px 3px 14px;
     transition-property: border;
@@ -215,8 +236,14 @@
 }
 
 .popup_menu_items:hover {
-    color:white;
+    background-color: #212d3d00;
+    color: #fff;
+    border-bottom: 2px solid #ffffffff;
+    transition-property: border, color;
+    transition-duration: 0.15s;
+    transition-timing-function: ease-in-out;
 }
+
 
 /* Categories================================================================= */
 .popup_menu_leftborder {
@@ -262,8 +289,14 @@
 }
 
 .popup_menu_item3:hover {
-    color:white;
+    background-color: #212d3d00;
+    color: #fff;
+    border-bottom: 2px solid #ffffffff;
+    transition-property: border, color;
+    transition-duration: 0.15s;
+    transition-timing-function: ease-in-out;
 }
+
 
 .popup_menu_items4 {
     border-bottom: 2px solid #ffffff00;

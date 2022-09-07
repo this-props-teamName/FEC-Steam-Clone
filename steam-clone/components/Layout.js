@@ -32,8 +32,8 @@ useEffect(() => {
 
   axios.get('http://localhost:4000/api/comments')
     .then(res => setCommentsInfo(res.data[0]));
-
 }, [])
+
 
   return (
     <>

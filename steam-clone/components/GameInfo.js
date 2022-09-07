@@ -7,7 +7,6 @@ const GameInfo = () => {
     <div className='w-[940px] mx-auto my-0 overflow-hidden'>
       <RightColumn/>
       <LeftColumn/>
-      GameInfo
     </div>
   )
 }

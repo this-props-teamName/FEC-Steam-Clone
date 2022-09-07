@@ -1,44 +1,47 @@
 import React, { useState, useEffect } from 'react'
 import axios from 'axios'
 import detailsStyles from '../styles/RightColumn.module.css'
+import { carouselState } from './state'
+import { useRecoilState } from 'recoil'
 
 const Details = () => {
-    const [details, getDetails] = useState();
+    // const [details, getDetails] = useState();
     
-    useEffect(() => {
-        axios.get('http://localhost:4000/api/carousel')
-        .then(res => getDetails(res.data[0]));
-    }, []);
+    // useEffect(() => {
+    //     axios.get('http://localhost:4000/api/carousel')
+    //     .then(res => getDetails(res.data[0]));
+    // }, []);
+    const [carouselInfo, setCarouselInfo] = useRecoilState(carouselState)
 
 
-    if (details) {
+    if (carouselInfo.length !== 0) {
         return (
             <div className={detailsStyles.details}>
                 <div className="block">
                     <div className="block">
                         <div className="block">
                             <b className="font-sans text-[#556772] font-normal uppercase text-[10px]">Title: &nbsp;</b>
-                            {details.title}
+                            {carouselInfo.title}
                             <br/>
                             <b className="font-sans text-[#556772] font-normal uppercase text-[10px]">Genre: &nbsp;</b>
                             <span>
-                                <a href="https://store.steampowered.com/genre/Action/?snr=1_5_9__408" className="font-serif font-[300] text-[#67c1f5] hover:text-[#fff]">{details.genres[0]}</a>
+                                <a href="https://store.steampowered.com/genre/Action/?snr=1_5_9__408" className="font-serif font-[300] text-[#67c1f5] hover:text-[#fff]">{carouselInfo.genres[0]}</a>
                                 , &nbsp;
-                                <a href="https://store.steampowered.com/genre/Adventure/?snr=1_5_9__408" className="font-serif font-[300] text-[#67c1f5] hover:text-[#fff]">{details.genres[1]}</a>
+                                <a href="https://store.steampowered.com/genre/Adventure/?snr=1_5_9__408" className="font-serif font-[300] text-[#67c1f5] hover:text-[#fff]">{carouselInfo.genres[1]}</a>
                                 , &nbsp;
-                                <a href="https://store.steampowered.com/genre/RPG/?snr=1_5_9__408" className="font-serif font-[300] text-[#67c1f5] hover:text-[#fff]">{details.genres[2]}</a>
+                                <a href="https://store.steampowered.com/genre/RPG/?snr=1_5_9__408" className="font-serif font-[300] text-[#67c1f5] hover:text-[#fff]">{carouselInfo.genres[2]}</a>
                             </span>
                             <br/>
                             <div>
                                 <b className="font-sans text-[#556772] font-normal uppercase text-[10px]">Developer: &nbsp;</b>
-                                <a href="https://store.steampowered.com/developer/WBGames?snr=1_5_9__408" className="font-serif font-[300] text-[#67c1f5] hover:text-[#fff]">{details.developer}</a>
+                                <a href="https://store.steampowered.com/developer/WBGames?snr=1_5_9__408" className="font-serif font-[300] text-[#67c1f5] hover:text-[#fff]">{carouselInfo.developer}</a>
                             </div>
                             <div>
                                 <b className="font-sans text-[#556772] font-normal uppercase text-[10px]">Publisher: &nbsp;</b>
-                                <a href="https://store.steampowered.com/publisher/WBGames?snr=1_5_9__408" className="font-serif font-[300] text-[#67c1f5] hover:text-[#fff]">{details.publisher}</a>
+                                <a href="https://store.steampowered.com/publisher/WBGames?snr=1_5_9__408" className="font-serif font-[300] text-[#67c1f5] hover:text-[#fff]">{carouselInfo.publisher}</a>
                             </div>
                             <b className="font-sans text-[#556772] font-normal uppercase text-[10px]">Release Date: &nbsp;</b>
-                            {details.release_date}
+                            {carouselInfo.release_date}
                             <br/>
                         </div>
                         {/* details block */}
