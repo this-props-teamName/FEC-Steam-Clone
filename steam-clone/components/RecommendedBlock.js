@@ -74,7 +74,7 @@ const RecommendedBlock = () => {
           {/* The start of a new recommendation for Spider-Man*/}
           <a className='float-none inline-block align-top bg-[#00000033] p-[15px] mr-[2px] h-[132px] border-[1px] border-[#00000000] relative decoration-0 text-[#fff] cursor-pointer hover:border-[#67c1f5]' href='https://store.steampowered.com/app/1817070/Marvels_SpiderMan_Remastered/?snr=1_5_9__300_7'>
             <img src='https://cdn.cloudflare.steamstatic.com/steam/apps/1817070/capsule_184x69.jpg?t=1660316394' className='w-[171px] border-0 m-0 p-0 text-[#fff] curson-pointer text-[14px] font-sans' />
-            <h4 className='text-[13px] font-serif font-normal text-[#8f98a0] w-[171px] text-ellipsis overflow-hidden mb-0 whitespace-nowrap cursor-pointer'>Marvel's Spider-Man Remastered</h4>
+            <h4 className='text-[13px] font-serif font-normal text-[#8f98a0] w-[171px] text-ellipsis overflow-hidden mb-0 whitespace-nowrap cursor-pointer'>{"Marvel's Spider-Man Remastered"}</h4>
             <div className='m-0 text-right p-[5px] leading-[17px] min-h-[17px] text-[12px] relative block text-[#fff]'>
               <div className='inline-block pt-0 pr-[3px] pb-0 pl-[3px] bg-[#141f2c66] rounded-[1px] align-bottom text-right text-[12px] cursor-pointer'>
                 <div className='pl-0 text-[11px] inline text-[#acdbf5] font-sans text-right leading-[17px]'>$59.99</div>
