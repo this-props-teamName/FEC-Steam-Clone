@@ -32,6 +32,7 @@ CREATE TABLE carousel (
     title_img_url TEXT,
     large_img_url TEXT[],
     small_img_url TEXT[],
+    huge_img_url TEXT[],
     carousel_game_info TEXT,
     developer TEXT,
     publisher TEXT,
@@ -88,7 +89,8 @@ CREATE TABLE logIn (
 
 CREATE TABLE news (
     id SERIAL,
-    hoverText TEXT,
-    mainText TEXT,
-    images TEXT
+    hoverText TEXT[],
+    mainText TEXT[],
+    images TEXT[],
+    game_id INTEGER REFERENCES game(id)
 );

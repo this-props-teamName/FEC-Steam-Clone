@@ -12,10 +12,11 @@ INSERT INTO gameInfo (prepur_offer, dd_edition, dd_img, recent_events_img, recen
     'https://store.cloudflare.steamstatic.com/public/shared/images/game_ratings/ESRB/rp.png', 
     1);
 
-INSERT INTO carousel (title_img_url, large_img_url, small_img_url, carousel_game_info, developer, publisher, release_date, tags, title, dd_title, genres, game_id) VALUES (
+INSERT INTO carousel (title_img_url, large_img_url, small_img_url, huge_img_url, carousel_game_info, developer, publisher, release_date, tags, title, dd_title, genres, game_id) VALUES (
     'https://cdn.cloudflare.steamstatic.com/steam/apps/990080/header.jpg?t=1661535551',
     '{"https://cdn.cloudflare.steamstatic.com/steam/apps/990080/ss_725bf58485beb4aa37a3a69c1e2baa69bf3e4653.600x338.jpg?t=1661535551", "https://cdn.cloudflare.steamstatic.com/steam/apps/990080/ss_df93b5e8a183f7232d68be94ae78920a90de1443.600x338.jpg?t=1661535551", "https://cdn.cloudflare.steamstatic.com/steam/apps/990080/ss_94058497bf0f8fabdde17ee8d59bece609a60663.600x338.jpg?t=1661535551", "https://cdn.cloudflare.steamstatic.com/steam/apps/990080/ss_8e08976236d29b1897769257ac3c64e9264792a5.600x338.jpg?t=1661535551", "https://cdn.cloudflare.steamstatic.com/steam/apps/990080/ss_d4930d675af053dc1e61a876a34fc003e85e261f.600x338.jpg?t=1661535551"}',
     '{"https://cdn.cloudflare.steamstatic.com/steam/apps/990080/ss_725bf58485beb4aa37a3a69c1e2baa69bf3e4653.116x65.jpg?t=1661535551", "https://cdn.cloudflare.steamstatic.com/steam/apps/990080/ss_df93b5e8a183f7232d68be94ae78920a90de1443.116x65.jpg?t=1661535551", "https://cdn.cloudflare.steamstatic.com/steam/apps/990080/ss_94058497bf0f8fabdde17ee8d59bece609a60663.116x65.jpg?t=1661535551", "https://cdn.cloudflare.steamstatic.com/steam/apps/990080/ss_8e08976236d29b1897769257ac3c64e9264792a5.116x65.jpg?t=1661535551", "https://cdn.cloudflare.steamstatic.com/steam/apps/990080/ss_d4930d675af053dc1e61a876a34fc003e85e261f.116x65.jpg?t=1661535551"}',
+    '{"https://cdn.cloudflare.steamstatic.com/steam/apps/990080/ss_725bf58485beb4aa37a3a69c1e2baa69bf3e4653.1920x1080.jpg?t=1661535551", "https://cdn.cloudflare.steamstatic.com/steam/apps/990080/ss_df93b5e8a183f7232d68be94ae78920a90de1443.1920x1080.jpg?t=1661535551", "https://cdn.cloudflare.steamstatic.com/steam/apps/990080/ss_94058497bf0f8fabdde17ee8d59bece609a60663.1920x1080.jpg?t=1661535551", "https://cdn.cloudflare.steamstatic.com/steam/apps/990080/ss_8e08976236d29b1897769257ac3c64e9264792a5.1920x1080.jpg?t=1661535551", "https://cdn.cloudflare.steamstatic.com/steam/apps/990080/ss_d4930d675af053dc1e61a876a34fc003e85e261f.1920x1080.jpg?t=1661535551"}',
     'Hogwarts Legacy is an immersive, open-world action RPG. Now you can take control of the action and be at the center of your own adventure in the wizarding world.',
     'Avalanche Software', 
     'Warner Bros. Games', 
@@ -52,5 +53,6 @@ INSERT INTO req (required_info, os, processor, memory, graphics, directX, storag
     INSERT INTO news (hoverText, mainText, images) VALUES (
         '{"Take a tour of the Slytherin common room, located deep within the dungeons of Hogwarts Castle.", "Welcome to Hufflepuff Common Room, where cozy natural sunlight and an array of plants await."}',
         '{"Tour the Slytherin Common Room", "Tour the Hufflepuff Common Room", ""Sat, September 3, 2022""}',
-        '{"https://cdn.akamai.steamstatic.com/steamcommunity/public/images/clans/42155078/6e9647679e2a01001e1a61da7b7373bc086350f6_400x225.jpg", "https://cdn.akamai.steamstatic.com/steamcommunity/public/images/clans/42155078/db8eef3034e5b0fb77b5528ee7eafa812ff830f0_400x225.jpg"}'
+        '{"https://cdn.akamai.steamstatic.com/steamcommunity/public/images/clans/42155078/6e9647679e2a01001e1a61da7b7373bc086350f6_400x225.jpg", "https://cdn.akamai.steamstatic.com/steamcommunity/public/images/clans/42155078/db8eef3034e5b0fb77b5528ee7eafa812ff830f0_400x225.jpg"}',
+        1
     );
