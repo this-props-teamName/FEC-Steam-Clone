@@ -4,6 +4,7 @@
     border-radius: 3px;
     background: linear-gradient( 135deg, #356480 5%,#1a303d 95%);
     color: white;
+    display: none;
 }
 
 .modal_btns{
