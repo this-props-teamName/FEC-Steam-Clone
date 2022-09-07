@@ -76,8 +76,8 @@ const EmbedRow = () => {
                                 </div>
                                 <div className= {shareStyles.newmodal_buttons}>
                                     <div 
-                                    onClick={() => setShareBox(false)}
                                     className= {shareStyles.btn_grey_steamui}
+                                    onClick={() => setShareBox(false)}
                                     >
                                         <span className= {shareStyles.btn_grey_steamui_span}>OK</span>
                                     </div>
@@ -109,18 +109,18 @@ const EmbedRow = () => {
                                     <div className = {shareStyles.w_option}>
                                         <input 
                                         type= "radio"
-                                        value= 'radio1'
-                                        checked= {isRadioSelected('radio1')}
-                                        onChange= {handleRadioClick}                                      
+                                        name= "w_rsubid"
+                                        id="wp__326241"
+                                        value= '326241'                                   
                                         />
-                                        <label> Hogwarts Legacy </label>
+                                        <label for= "wp_326241"> Hogwarts Legacy </label>
                                     </div>
                                     <div className = {shareStyles.w_option}>
                                         <input 
                                         type= "radio"
-                                        value= 'radio2'
-                                        checked= {isRadioSelected('radio2')}
-                                        onChange= {handleRadioClick}  
+                                        name= "w_rsubid"
+                                        id="wp_757087"
+                                        value= "757087"
                                         />
                                         <label> Hogwarts Legacy Deluxe Edition </label>
                                     </div>
@@ -155,9 +155,10 @@ const EmbedRow = () => {
                 </div>
             ): null}
 
-            {/* Report This Prodcut */}
+            
+{/* Report This Prodcut */}
             {showReport ? (
-                <div className= {shareStyles.reportModal}>
+                <div className= {` ${shareStyles.reportModal} ${shareStyles.scrollbar}`}>
                      <div className = {shareStyles.top_bar}></div>
                         <div>
                             <div className ={shareStyles.header}>
@@ -172,7 +173,7 @@ const EmbedRow = () => {
                                         <div>
                                             <div className= {shareStyles.app_report_dialog}>
 
-                                                <div className= {shareStyles.app_report_dialog_intro}> Please choose a reason why you are reporting this product.
+                                                <div className= {shareStyles.app_report_dialog_intro}> Please choose a reason why you are reporting this product.</div>
                                                     <div className= {shareStyles.app_report_dialog_option}>
                                                         <div className= {shareStyles.app_report_dialog_option_input}>
                                                             <input
@@ -180,14 +181,14 @@ const EmbedRow = () => {
                                                                 name= "report_type"
                                                                 value="2"
                                                                 id= "report_type_2"
-                                                            ></input>
+                                                            />
+                                                            </div>
                                                             <div className= {shareStyles.app_report_dialog_option_text}>
                                                                 <label for="report_type_2">
                                                                     Harmful - 
-                                                                    <span className= {shareStyles.sub}>This software modifies a customer's computer in unexpected or harmful ways (e.g. is malware or a virus)</span>
+                                                                    <span className= {shareStyles.sub}> This software modifies a customer's computer in unexpected or harmful ways (e.g. is malware or a virus)</span>
                                                                 </label>
                                                             </div>
-                                                        </div>
                                                     </div>
 
                                                      <div className= {shareStyles.app_report_dialog_option}>
@@ -197,14 +198,14 @@ const EmbedRow = () => {
                                                                 name= "report_type"
                                                                 value="6"
                                                                 id= "report_type_6"
-                                                            ></input>
+                                                            />
+                                                            </div>
                                                             <div className= {shareStyles.app_report_dialog_option_text}>
                                                                 <label for="report_type_6">
                                                                     Defamatory - 
-                                                                    <span className= {shareStyles.sub}>Contains Libelous or defamatory statements</span>
+                                                                    <span className= {shareStyles.sub}> Contains Libelous or defamatory statements</span>
                                                                 </label>
                                                             </div>
-                                                        </div>
                                                     </div>
 
                                                     <div className= {shareStyles.app_report_dialog_option}>
@@ -214,14 +215,14 @@ const EmbedRow = () => {
                                                                 name= "report_type"
                                                                 value="1"
                                                                 id= "report_type_1"
-                                                            ></input>
+                                                            />
+                                                            </div>
                                                             <div className= {shareStyles.app_report_dialog_option_text}>
                                                                 <label for="report_type_1">
                                                                     Fraud -  
-                                                                    <span className= {shareStyles.sub}>This software fraudulently attempts to gather sensitive information, such as your Steam credentials or financial data (e.g. credit card information).</span>
+                                                                    <span className= {shareStyles.sub}> This software fraudulently attempts to gather sensitive information, such as your Steam credentials or financial data (e.g. credit card information).</span>
                                                                 </label>
                                                             </div>
-                                                        </div>
                                                     </div>
 
                                                     <div className= {shareStyles.app_report_dialog_option}>
@@ -231,14 +232,14 @@ const EmbedRow = () => {
                                                                 name= "report_type"
                                                                 value="11"
                                                                 id= "report_type_11"
-                                                            ></input>
+                                                            />
+                                                            </div>
                                                             <div className= {shareStyles.app_report_dialog_option_text}>
                                                                 <label for="report_type_11">
                                                                     Legal Violation - 
-                                                                    <span className= {shareStyles.sub}>Contains content that violates the laws in your jurisdiction.</span>
+                                                                    <span className= {shareStyles.sub}> Contains content that violates the laws in your jurisdiction.</span>
                                                                 </label>
                                                             </div>
-                                                        </div>
                                                     </div>
 
                                                     <div className= {shareStyles.app_report_dialog_option}>
@@ -248,14 +249,14 @@ const EmbedRow = () => {
                                                                 name= "report_type"
                                                                 value="5"
                                                                 id= "report_type_5"
-                                                            ></input>
+                                                            />
+                                                            </div>
                                                             <div className= {shareStyles.app_report_dialog_option_text}>
                                                                 <label for="report_type_5">
                                                                     Adult Content - 
-                                                                    <span className= {shareStyles.sub}>Contains adult content that isn't appropriately labeled and age-gated</span>
+                                                                    <span className= {shareStyles.sub}> Contains adult content that isn't appropriately labeled and age-gated</span>
                                                                 </label>
                                                             </div>
-                                                        </div>
                                                     </div>
 
                                                     <div className= {shareStyles.app_report_dialog_option}>
@@ -265,14 +266,14 @@ const EmbedRow = () => {
                                                                 name= "report_type"
                                                                 value="8"
                                                                 id= "report_type_8"
-                                                            ></input>
+                                                            />
+                                                            </div>
                                                             <div className= {shareStyles.app_report_dialog_option_text}>
                                                                 <label for="report_type_8">
-                                                                    "Child Exploitation - "
-                                                                    <span className= {shareStyles.sub}>Contains content that exploits children in any way</span>
+                                                                    Child Exploitation - 
+                                                                    <span className= {shareStyles.sub}> Contains content that exploits children in any way</span>
                                                                 </label>
                                                             </div>
-                                                        </div>
                                                     </div>
 
                                                     <div className= {shareStyles.app_report_dialog_option}>
@@ -282,14 +283,14 @@ const EmbedRow = () => {
                                                                 name= "report_type"
                                                                 value="13"
                                                                 id= "report_type_13"
-                                                            ></input>
+                                                            />
+                                                            </div>
                                                             <div className= {shareStyles.app_report_dialog_option_text}>
                                                                 <label for="report_type_13">
                                                                     Broken -  
-                                                                    <span className= {shareStyles.sub}>Does not download, launch, or run correctly, even on a machine that meets the minimum system requirements.</span>
+                                                                    <span className= {shareStyles.sub}> Does not download, launch, or run correctly, even on a machine that meets the minimum system requirements.</span>
                                                                 </label>
                                                             </div>
-                                                        </div>
                                                     </div>
                                                     <div className= {shareStyles.app_report_dialog_intro}>
                                                         You may enter additional information that you feel is relevant here:
@@ -297,10 +298,9 @@ const EmbedRow = () => {
                                                     <textarea className= {shareStyles.app_report_dialog_reason}></textarea>
                                                     <div classNaem= {shareStyles.app_report_dialog_dmca}>
                                                     If you'd like to report Copyright Infringement and are the copyright holder, please proceed to our DMCA compliant notice of copyright infringement form 
-                                                        <a href="https://steamcommunity.com/dmca/create/">here</a>
+                                                        <a className= {shareStyles.here} href="https://steamcommunity.com/dmca/create/"> here</a>
                                                         .
                                                     </div>
-                                                </div>
                                             </div>
                                             <div className= {shareStyles.btn_container}>
                                                 <div className= {shareStyles.green_btn}>
