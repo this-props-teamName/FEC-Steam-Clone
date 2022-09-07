@@ -36,8 +36,8 @@ const GameEvents = () => {
                   News
                 </div>
                 <div className="hover:text-[#fff] mx-[20px] my-[10px] text-[15px] text-[#ffffff00] leading-[20px] font-[300] overflow-hidden select-none scale-100 z-[2] p-0 hover:ease-out duration-300 ">
-                  "Take a tour of the Slytherin common room, located deep within
-                  the dungeons of Hogwarts Castle."
+                  Take a tour of the Slytherin common room, located deep within
+                  the dungeons of Hogwarts Castle.
                 </div>
               </div>
               {/* <div className='bg-[url("https://cdn.akamai.steamstatic.com/steamcommunity/public/images/clans/42155078/6e9647679e2a01001e1a61da7b7373bc086350f6_400x225.jpg")] w-full h-full bg-cover absolute opacity-40 p-0 m-0 block '> */}
@@ -73,8 +73,8 @@ const GameEvents = () => {
               <div className={Backing.right}>
                 <div className={Backing.rightInner}>News</div>
                 <div className={Backing.rightInner2}>
-                  "Welcome to Hufflepuff Common Room, where cozy natural
-                  sunlight and an array of plants await."
+                  Welcome to Hufflepuff Common Room, where cozy natural
+                  sunlight and an array of plants await.
                 </div>
               </div>
               <div className="w-full h-full bg-cover absolute opactiy-[.4]"></div>
@@ -91,7 +91,7 @@ const GameEvents = () => {
                     Tour the Hufflepuff Common Room
                   </div>
                   <span className="inline-flex whitespace-nowrap">
-                    "Sat, September 3, 2022"
+                    Sat, September 3, 2022
                   </span>
                 </div>
               </div>
