@@ -38,7 +38,7 @@ CREATE TABLE carousel (
     publisher TEXT,
     release_date TEXT,
     tags TEXT[],
-    title TEXT,
+    title TEXT[],
     dd_title TEXT,
     genres TEXT[],
     game_id INTEGER REFERENCES game(id)
