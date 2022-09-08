@@ -8,6 +8,8 @@ import pg from 'pg';
 // const app = express();
 const PORT = process.env.PORT || 4000;
 const pool = new pg.Pool({
+    user: '1002c',
+    password: 'Zelda@1002',
     connectionString: process.env.DATABASE_URL,
     ...(process.env.NODE_ENV === "production" 
     ? {
