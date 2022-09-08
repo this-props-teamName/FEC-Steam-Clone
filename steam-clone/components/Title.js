@@ -12,9 +12,9 @@ const Title = () => {
           <div className='text-[#8f98a0]'>
             <a className="text-[14px] text-[#8f98a0] font-sans hover:text-[#c6d4df]" href='https://store.steampowered.com/search/?term=&snr=1_5_9__205'>All Games</a>
             {" > "}
-            <a className="text-[14px] text-[#8f98a0] font-sans hover:text-[#c6d4df]" href='https://store.steampowered.com/genre/Adventure/?snr=1_5_9__205'>Adventure Games</a>
+            <a className="text-[14px] text-[#8f98a0] font-sans hover:text-[#c6d4df]" href='https://store.steampowered.com/genre/Adventure/?snr=1_5_9__205'>{carouselInfo.title[1]}</a>
             {" > "}
-            <a className="text-[14px] text-[#8f98a0] font-sans hover:text-[#c6d4df]" href='https://store.steampowered.com/app/990080/?snr=1_5_9__205'>{carouselInfo.title}</a>
+            <a className="text-[14px] text-[#8f98a0] font-sans hover:text-[#c6d4df]" href='https://store.steampowered.com/app/990080/?snr=1_5_9__205'>{carouselInfo.title[0]}</a>
           </div>
         </div>
         {/* title/community hub div */}
@@ -28,7 +28,7 @@ const Title = () => {
                 </a>
               </div>
             <div className='text-[26px] text-ellipsis leading-[32px] font-normal pl-[0px] font-sans text-[#fff]'>
-              Hogwarts Legacy
+              {carouselInfo.title[0]}
             </div>
           </div>
         </div>
