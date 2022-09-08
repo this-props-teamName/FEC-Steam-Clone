@@ -296,7 +296,7 @@ const EmbedRow = () => {
                                                         You may enter additional information that you feel is relevant here:
                                                     </div>
                                                     <textarea className= {shareStyles.app_report_dialog_reason}></textarea>
-                                                    <div classNaem= {shareStyles.app_report_dialog_dmca}>
+                                                    <div className= {shareStyles.app_report_dialog_dmca}>
                                                     {"If you'd like to report Copyright Infringement and are the copyright holder, please proceed to our DMCA compliant notice of copyright infringement form"} 
                                                         <a className= {shareStyles.here} href="https://steamcommunity.com/dmca/create/"> here</a>
                                                         .
