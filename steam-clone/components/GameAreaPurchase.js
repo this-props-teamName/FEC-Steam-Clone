@@ -5,9 +5,8 @@ import { useRecoilState, useRecoilValue } from "recoil"
 export const GameAreaPurchase = () => {
   /* padding(top, right, bottom, left) */ 
 const [gamesInfo, setGamesInfo] = useRecoilState(gamesState); 
-console.log(gamesInfo)
+
 const [carouselInfo, setCarouselInfo] = useRecoilState(carouselState); 
-console.log(carouselInfo); 
 
 let currDate = new Date(); 
 let reDate = new Date(carouselInfo.release_date); 
@@ -15,7 +14,6 @@ let differentTime = reDate.getTime() - currDate.getTime();
 
 // let currMonth = currDate.getMonth() + 1; 
 // let reMonth = reDate.getMonth() + 1
-console.log(reDate.getTime()); 
 
     return (
       <div className="text-[14px] mt-[16px]">

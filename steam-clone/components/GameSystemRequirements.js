@@ -6,7 +6,6 @@ const GameSystemRequirements = () => {
   const [systemMinInfo, setSystemMinInfo] = useRecoilState(systemMinState)
   const [systemReqInfo, setSystemReqInfo] = useRecoilState(systemReqState)
 
-  console.log(systemMinInfo.copy_write)
   
 
   if(systemMinInfo.copy_write) {

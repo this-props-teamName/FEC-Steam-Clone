@@ -1,22 +1,26 @@
 import { carouselState } from './state'
 import { useRecoilState } from 'recoil'
 import { arrow } from '../styles/Carousel.module.css'
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
 
 
 const CarouselImages = () => {
   const [carouselInfo, setCarouselInfo] = useRecoilState(carouselState);
   const [frame, setFrame] = useState(0)
+  const [counter, setCounter] = useState(0)
 
-  setInterval((frame) => {
-    if(frame < 480){
-      setFrame(frame + 120)
-    }else{
-      setFrame(0)
-    }
-  },3000)
+  useEffect(()=>{
+    setInterval(() => {
+        if(frame < 480){
+          setFrame(frame += 120)
+          setCounter(counter += 1)
+        }else{
+          setFrame(frame -= 480)
+          setCounter(counter -= 4)
+        }
+      },5000)
+    },[])
 
-  
   if(carouselInfo.large_img_url){
   return (
       <div className="w-[616] float-left p-[0px] m-[0px] font-sans">
@@ -28,45 +32,46 @@ const CarouselImages = () => {
             {/* large images of the carousel */}
             <div className="absolute top-0 right-0 bottom-0 left-0 text-center p-0 m-0 focus-within:">
               <div className="flex h-[100%] flex-col justify-center">
-                <a className="text-[#67c1f5]" href="https://cdn.cloudflare.steamstatic.com/steam/apps/990080/ss_725bf58485beb4aa37a3a69c1e2baa69bf3e4653.1920x1080.jpg?t=1661535551">
-                  <img src={carouselInfo.large_img_url[0]} />
+                <a className="text-[#67c1f5]" href={carouselInfo.huge_img_url[counter]}>
+                  <img src={carouselInfo.large_img_url[counter]} />
                 </a>
               </div>
             </div>
-            <div className="absolute top-0 right-0 bottom-0 left-0 text-center p-0 m-0 focus-within:">
+            {/* <div className="absolute top-0 right-0 bottom-0 left-0 text-center p-0 m-0 focus-within:">
               <div className="flex h-[100%] flex-col justify-center">
                 <a className="text-[#67c1f5]" href="https://cdn.cloudflare.steamstatic.com/steam/apps/990080/ss_df93b5e8a183f7232d68be94ae78920a90de1443.1920x1080.jpg?t=1661535551">
-                  <img src={carouselInfo.large_img_url[1]} />
+                  <img src={carouselInfo.large_img_url[counter]} />
                 </a>
               </div>
             </div>
             <div className="absolute top-0 right-0 bottom-0 left-0 text-center p-0 m-0 focus-within:">
               <div className="flex h-[100%] flex-col justify-center">
                 <a className="text-[#67c1f5]" href="https://cdn.cloudflare.steamstatic.com/steam/apps/990080/ss_94058497bf0f8fabdde17ee8d59bece609a60663.1920x1080.jpg?t=1661535551">
-                  <img src={carouselInfo.large_img_url[2]} />
+                  <img src={carouselInfo.large_img_url[counter]} />
                 </a>
               </div>
             </div>
             <div className="absolute top-0 right-0 bottom-0 left-0 text-center p-0 m-0 focus-within:">
               <div className="flex h-[100%] flex-col justify-center">
                 <a className="text-[#67c1f5]" href="https://cdn.cloudflare.steamstatic.com/steam/apps/990080/ss_8e08976236d29b1897769257ac3c64e9264792a5.1920x1080.jpg?t=1661535551">
-                  <img src={carouselInfo.large_img_url[3]} />
+                  <img src={carouselInfo.large_img_url[counter]} />
                 </a>
               </div>
             </div>
             <div className="absolute top-0 right-0 bottom-0 left-0 text-center p-0 m-0 focus-within:">
               <div className="flex h-[100%] flex-col justify-center">
                 <a className="text-[#67c1f5]" href="https://cdn.cloudflare.steamstatic.com/steam/apps/990080/ss_d4930d675af053dc1e61a876a34fc003e85e261f.1920x1080.jpg?t=1661535551">
-                  <img src={carouselInfo.large_img_url[4]} />
+                  <img src={carouselInfo.large_img_url[counter]} />
                 </a>
               </div>
             </div>
-            <script></script>
+            <script></script> */}
           </div>
           <div className="mt-[4px] relative h-[69px] mb-[4px] z-40">
             <div className="w-[602px] left-0 absolute">
               {/* frame of mini picutres */}
-              <div className={`absolute w-[116px]l-[${frame}px] h-[72px] z-50 top-[-3px] border-[3px] border-[#fff]`}>
+              <div className='absolute w-[116px] h-[72px] z-50 top-[-3px] border-[3px] border-[#fff]' style={{left:`${frame}px`}}>
+               {console.log(frame)}
                 <div className={arrow}></div>
               </div>
               {/* small images below the main viewer of the carousel */}
