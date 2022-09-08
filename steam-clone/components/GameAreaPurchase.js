@@ -8,14 +8,12 @@ const [gamesInfo, setGamesInfo] = useRecoilState(gamesState);
 
 const [carouselInfo, setCarouselInfo] = useRecoilState(carouselState); 
 
-
 let currDate = new Date(); 
 let reDate = new Date(carouselInfo.release_date); 
 let differentTime = reDate.getTime() - currDate.getTime(); 
 
 // let currMonth = currDate.getMonth() + 1; 
 // let reMonth = reDate.getMonth() + 1
-console.log(reDate.getTime()); 
 
     return (
       <div className="text-[14px] mt-[16px]">
