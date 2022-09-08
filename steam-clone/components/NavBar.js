@@ -1,7 +1,7 @@
 import { data } from 'autoprefixer'
 import Link from 'next/link'
 import navStyles from '../styles/Nav.module.css'
-import React, { useState } from 'react'
+import { useState, useEffect } from 'react'
 
 
 const NavBar = () => {
@@ -254,14 +254,32 @@ const NavBar = () => {
                 <div className= "grow shrink basis-[0%] w-[20px]"></div>
                   <div className= "grow shrink-0 max-w-[210px]">
                     <div className= "float-none px-[4px] pt-[3px] pb-[2px] h-[30px]">
-                      <form>
-                        <input type="hidden"/>
+                      <form 
+                        name="searchform"
+                        method="get"
+                        action= "https://store.steampowered.com/search/"
+                        onSubmit = "return this"
+                        >
+                        <input 
+                        type="hidden"
+                        name="snr"
+                        value="1_5_9_12"
+                        />
                           <div className= {navStyles.searchbar}>
                             <input 
                             className= {navStyles.searchbox} 
+                            name="term"
+                            type="text"
                             placeholder= "search"
+                            size="22"
+                            autoComplete="off"
+                            maxLength="64"
                             />
-                              <a className= {navStyles.search_link} href= "https://store.steampowered.com/search/?term=">
+                              <a 
+                              className= {navStyles.search_link} 
+                              href= "https://store.steampowered.com/search/?term="
+                              onClick= "var $Form = $J(this).parents('form'); $Form.submit(); return false;"
+                              >
                                 <img className= "w-[25px] h-[25px] absoulte top-[1px] right-[-1px] bg-[url('https://store.akamai.steamstatic.com/public/images/v6/search_icon_btn.png')]" src="https://store.akamai.steamstatic.com/public/images/blank.gif"/>
                               </a>
                           </div>
@@ -275,5 +293,6 @@ const NavBar = () => {
     </div>
   )
 }
+
 
 export default NavBar
