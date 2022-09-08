@@ -131,7 +131,8 @@ const Header = () => {
           <div className="leading-[24px] align-top inline-block">
             {/* ----this us the LOG OUT version ------------------ */}
             <div className=" inline-block relative leading-[24px] mr-[3px]">
-              <a className="bg-[#5c7e10] text-[#b8b6b4] inline-block pl-[35px] pr-[9px] bg-[bottom_5px_left_10px] bg-[url('https://store.akamai.steamstatic.com/public/shared/images/header/btn_header_installsteam_download.png?v=1')] bg-no-repeat leading-[24px] text-[11px] h-[24px] text-[#e5e4dc] hover:text-[#FFFFFF]">
+              <a className="bg-[#5c7e10] text-[#b8b6b4] inline-block pl-[35px] pr-[9px] bg-[bottom_5px_left_10px] bg-[url('https://store.akamai.steamstatic.com/public/shared/images/header/btn_header_installsteam_download.png?v=1')] bg-no-repeat leading-[24px] text-[11px] h-[24px] text-[#e5e4dc] hover:text-[#FFFFFF]"
+              href='https://store.steampowered.com/about/'>
                 Install Steam
               </a>
             </div>
@@ -139,9 +140,9 @@ const Header = () => {
               login
             </a>
             &nbsp; |&nbsp;
-            <span className=" inline-block pl-[4px] leading-[25px] mr-[5px] pr-[18px] bg-[url('https://store.akamai.steamstatic.com/public/shared/images/popups/btn_arrow_down_padded.png')] bg-no-repeat bg-[center_right] text-[12px] hover:text-[#FFFFFF]">
+            <button className=" inline-block pl-[4px] leading-[25px] mr-[5px] pr-[18px] bg-[url('https://store.akamai.steamstatic.com/public/shared/images/popups/btn_arrow_down_padded.png')] bg-no-repeat bg-[center_right] text-[12px] hover:text-[#FFFFFF]">
               language
-            </span>
+            </button>
             {/* --------this is the log in version ----------------- */}
             <div className="hidden inline-block relative leading-[24px] mr-[3px]">
               <a className=" hidden inline-block pl-[35px] pr-[9px] bg-[bottom_5px_left_10px] bg-[#616a72] bg-[url('https://store.akamai.steamstatic.com/public/shared/images/header/btn_header_installsteam_download.png?v=1')] bg-no-repeat leading-[24px] text-[11px] h-[24px] text-[#e5e4dc] hover:text-[#FFFFFF]">
