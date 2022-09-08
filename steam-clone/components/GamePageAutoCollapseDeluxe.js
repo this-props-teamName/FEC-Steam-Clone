@@ -7,6 +7,7 @@ import GameInfo from './GameInfo';
 const GamePageAutoCollapseDeluxe = () => {
   const [gamesInfo, setGamesInfo] = useRecoilState(gamesState); 
   const [carouselInfo, setCarouselInfo] = useRecoilState(carouselState);
+
   const [readMoreClick, setReadMoreClick] = useState(false);
 
   const digiDeFullScreenClass = () => {
