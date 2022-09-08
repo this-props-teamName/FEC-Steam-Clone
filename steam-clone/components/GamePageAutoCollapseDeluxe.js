@@ -51,6 +51,7 @@ const GamePageAutoCollapseDeluxe = () => {
            </p>
          </div>
          <div className={readMoreClass()}>
+          <div className='relative h-[55px]' style={{background:'linear-gradient(0deg, #000000e8, transparent)'}}></div>
            <div className="absolute right-0 bottom-0 h-[20px] leading-[20px] cursor-pointer text-[#537ca6] text-[10px] pr-[12px] hover:text-[#fff] " onClick={()=> setReadMoreClick(true)}>
              READ MORE
              {/* need to add a gradient here but cant add since image is not http */}
