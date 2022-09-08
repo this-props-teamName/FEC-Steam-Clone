@@ -4,6 +4,8 @@ import { useState } from 'react';
 const GameEvents = () => {
   const [onHoverLeft, setOnHoverLeft] = useState(false)
   const [onHoverRight, setOnHoverRight] = useState(false)
+  
+
 
   return (
     <div>
@@ -30,16 +32,19 @@ const GameEvents = () => {
               // onMouseEnter={() => setOnHoverLeft(true)}
               // onMouseLeave={() => setOnHoverLeft(false)}
               href="https://store.steampowered.com/news/app/990080/view/3333248206672092333"
-            >
-              <div className=" absolute top-0 bg-[#15161900]  w-full h-full z-[1] ">
-                <div className="mt-[20px] mx-[20px] mb-[0px] text-[12px] uppercase font-[500] text-[#289cff00] overflow-hidden blur-[5px] select-none scale-100 z-[2] p-0 block">
+              onMouseEnter={() => setOnHoverLeft(true)} onMouseLeave={() => setOnHoverLeft(false)}>
+                {onHoverLeft ? (
+              <div className=" absolute top-0 pointer-events-none w-full h-full z-[1] p-0 m-0  block " style={{backgroundColor: "rgba(0,0,0,0.8)"}}>
+                <div className=' mt-5 mr-5 mb-0 ml-5 text-[12px] uppercase font-[500] overflow-hidden select-none scale-100 z-[2] p-0 block text-[#289cff]' >
                   News
                 </div>
-                <div className="hover:text-[#fff] mx-[20px] my-[10px] text-[15px] text-[#ffffff00] leading-[20px] font-[300] overflow-hidden select-none scale-100 z-[2] p-0 hover:ease-out duration-300 ">
+                <div className='mx-[20px] mt-[20px] mb-0 text-[15px] leading-5 font-light overflow-hidden select-none scale-100 z-[2] p-0 '>
                   Take a tour of the Slytherin common room, located deep within
                   the dungeons of Hogwarts Castle.
                 </div>
               </div>
+                ) : ('')
+                }
               {/* <div className='bg-[url("https://cdn.akamai.steamstatic.com/steamcommunity/public/images/clans/42155078/6e9647679e2a01001e1a61da7b7373bc086350f6_400x225.jpg")] w-full h-full bg-cover absolute opacity-40 p-0 m-0 block '> */}
               {/* </div> */}
               {/* this happens whe No onhover */}
@@ -67,16 +72,18 @@ const GameEvents = () => {
             </a>
             <a
               className={Backing.events}
-              href="https://store.steampowered.com/news/app/990080/view/3333248206672082972"
-            >
+              href="https://store.steampowered.com/news/app/990080/view/3333248206672082972" onMouseEnter={() => setOnHoverRight(true)} onMouseLeave={() => setOnHoverRight(false)}>
               {/* This portion is the on hover area  */}
-              <div className={Backing.right}>
-                <div className={Backing.rightInner}>News</div>
-                <div className={Backing.rightInner2}>
+              { onHoverRight ? (
+              <div className='absolute top-0 pointer-events-none w-full h-full z-[1] p-0 m-0 block' style={{backgroundColor: "rgba(0,0,0,0.8)"}}>
+                <div className='mt-5 mr-5 mb-0 ml-5 text-[12px] uppercase font-[500] overflow-hidden select-none scale-100 z-[2] p-0 block text-[#289cff]'>News</div>
+                <div className='mx-[20px] mt-[20px] mb-0 text-[15px] leading-5 font-light overflow-hidden select-none scale-100 z-[2] p-0 '>
                   Welcome to Hufflepuff Common Room, where cozy natural
                   sunlight and an array of plants await.
                 </div>
               </div>
+              ) : ('')
+              }
               <div className="w-full h-full bg-cover absolute opactiy-[.4]"></div>
               {/* this is Before Hover  */}
               <div className="flex flex-col h-full">
