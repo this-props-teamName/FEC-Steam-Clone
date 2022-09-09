@@ -9,17 +9,25 @@ const CarouselImages = () => {
   const [frame, setFrame] = useState(0)
   const [counter, setCounter] = useState(0)
 
+ 
   useEffect(()=>{
     setInterval(() => {
-        if(frame < 480){
-          setFrame(frame += 120)
-          setCounter(counter += 1)
-        }else{
-          setFrame(frame -= 480)
-          setCounter(counter -= 4)
-        }
-      },5000)
-    },[])
+      if(frame < 480){
+        setFrame(frame += 120)
+        setCounter(counter += 1)
+      }else{
+        setFrame(frame -= 480)
+        setCounter(counter -= 4)
+      }
+    },5000)
+  },[])
+
+  
+  let clicked = (x, y) => {
+    clearInterval(0)
+    setFrame(x)
+    setCounter(y)
+  }
 
   if(carouselInfo.large_img_url){
   return (
@@ -70,25 +78,25 @@ const CarouselImages = () => {
           <div className="mt-[4px] relative h-[69px] mb-[4px] z-40">
             <div className="w-[602px] left-0 absolute">
               {/* frame of mini picutres */}
-              <div className='absolute w-[116px] h-[72px] z-50 top-[-3px] border-[3px] border-[#fff]' style={{left:`${frame}px`}}>
+              <div className='absolute w-[116px] h-[72px] z-50 top-[-3px] border-[3px] cursor-pointer border-[#fff]' style={{left:`${frame}px`}}>
                {console.log(frame)}
                 <div className={arrow}></div>
               </div>
               {/* small images below the main viewer of the carousel */}
-              <div className="h-[65px] w-[116px] cursor-pointer text-center m-[2px] bg-black relative float-left">
+              <div className="h-[65px] w-[116px] cursor-pointer text-center m-[2px] bg-black relative float-left" onClick={()=> clicked(0, 0)} >
                 <img src={carouselInfo.small_img_url[0]}/>
               </div>
-              <div className="h-[65px] w-[116px] cursor-pointer text-center m-[2px] bg-black relative float-left">
-                <img src={carouselInfo.small_img_url[1]}/>
+              <div className="h-[65px] w-[116px] cursor-pointer text-center m-[2px] bg-black relative float-left" onClick={()=> clicked(120, 1)}>
+                <img src={carouselInfo.small_img_url[1]} />
               </div>
-              <div className="h-[65px] w-[116px] cursor-pointer text-center m-[2px] bg-black relative float-left">
-                <img src={carouselInfo.small_img_url[2]}/>
+              <div className="h-[65px] w-[116px] cursor-pointer text-center m-[2px] bg-black relative float-left" onClick={()=> clicked(240, 2)}>
+                <img src={carouselInfo.small_img_url[2]} />
               </div>
-              <div className="h-[65px] w-[116px] cursor-pointer text-center m-[2px] bg-black relative float-left">
-                <img src={carouselInfo.small_img_url[3]}/>
+              <div className="h-[65px] w-[116px] cursor-pointer text-center m-[2px] bg-black relative float-left" onClick={()=> clicked(360, 3)}>
+                <img src={carouselInfo.small_img_url[3]} />
               </div>
-              <div className="h-[65px] w-[116px] cursor-pointer text-center m-[2px] bg-black relative float-left">
-                <img src={carouselInfo.small_img_url[4]}/>
+              <div className="h-[65px] w-[116px] cursor-pointer text-center m-[2px] bg-black relative float-left" onClick={()=> clicked(480, 4)}>
+                <img src={carouselInfo.small_img_url[4]} />
               </div>
             </div>
           </div>
